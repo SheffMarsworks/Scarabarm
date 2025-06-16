@@ -1,0 +1,257 @@
+<?xml version="1.0" ?>
+<robot name="scarabarm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find scarabarm_description)/urdf/materials.xacro" />
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0 0.0 0.017499999999999998" rpy="0 0 0"/>
+    <mass value="7.347599999999994"/>
+    <inertia ixx="0.011404" iyy="0.011404" izz="0.017634" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="joint_1_1">
+  <inertial>
+    <origin xyz="0.02779117383103328 0.07203746755556717 0.02909944964166468" rpy="0 0 0"/>
+    <mass value="9.796999285044631"/>
+    <inertia ixx="0.074413" iyy="0.011341" izz="0.081054" ixy="-0.01025" iyz="0.000668" ixz="0.00026"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.05" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/joint_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.05" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/joint_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_3_1">
+  <inertial>
+    <origin xyz="1.5069648940969048e-15 1.4921397450962103e-15 0.08450016247461267" rpy="0 0 0"/>
+    <mass value="5.105547520008758"/>
+    <inertia ixx="0.013715" iyy="0.013715" izz="0.003127" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.0 -0.6715" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.0 -0.6715" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="joint_3_1">
+  <inertial>
+    <origin xyz="0.07076406008833039 -2.443871605620655e-06 0.009054607350454935" rpy="0 0 0"/>
+    <mass value="14.113695138598164"/>
+    <inertia ixx="0.029282" iyy="0.043537" izz="0.037906" ixy="0.0" iyz="-2e-06" ixz="0.004646"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0371 0.0 -0.5885" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/joint_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0371 0.0 -0.5885" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/joint_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_2_1">
+  <inertial>
+    <origin xyz="-0.049810162062758546 1.5898068991049286e-07 0.19500005414972765" rpy="0 0 0"/>
+    <mass value="38.40870266620278"/>
+    <inertia ixx="0.764658" iyy="0.736453" izz="0.07174" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0371 -0.0 -0.1965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0371 -0.0 -0.1965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="joint_2_1">
+  <inertial>
+    <origin xyz="0.03366406008832795 2.443871603103906e-06 0.07394555512414759" rpy="0 0 0"/>
+    <mass value="14.113695138598164"/>
+    <inertia ixx="0.029282" iyy="0.043537" izz="0.037906" ixy="-0.0" iyz="-2e-06" ixz="-0.004646"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.0 -0.1135" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/joint_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.0 -0.1135" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/joint_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="joint_6_1">
+  <inertial>
+    <origin xyz="-3.2285564630085695e-07 -0.023923642393840153 -0.05878384983832641" rpy="0 0 0"/>
+    <mass value="7.117801366510355"/>
+    <inertia ixx="0.014343" iyy="0.008719" izz="0.012602" ixy="-0.0" iyz="-0.001058" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1021 0.0 -0.8827" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/joint_6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1021 0.0 -0.8827" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/joint_6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="joint_5_1">
+  <inertial>
+    <origin xyz="-0.058784357231620545 -2.0314700392987107e-08 0.023923804868466902" rpy="0 0 0"/>
+    <mass value="7.117801366510355"/>
+    <inertia ixx="0.012602" iyy="0.014343" izz="0.008719" ixy="0.0" iyz="-0.0" ixz="0.001058"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0371 0.0 -0.9235" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/joint_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0371 0.0 -0.9235" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/joint_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="joint_4_1">
+  <inertial>
+    <origin xyz="0.0336640600883303 2.443871592397185e-06 0.07394571759876611" rpy="0 0 0"/>
+    <mass value="14.113695138598164"/>
+    <inertia ixx="0.029282" iyy="0.043537" izz="0.037906" ixy="-0.0" iyz="-2e-06" ixz="-0.004646"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.8405" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/joint_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.8405" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find scarabarm_description)/meshes/scarabarm/joint_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="tool0"/>
+
+<joint name="base_link_to_joint_1" type="fixed">
+  <origin xyz="0.0 0.0 0.05" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="joint_1_1"/>
+</joint>
+
+<joint name="joint_1_to_joint_2" type="continuous">
+  <origin xyz="-0.0 0.0 0.0635" rpy="0 0 0"/>
+  <parent link="joint_1_1"/>
+  <child link="joint_2_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="joint_2_to_link_2" type="continuous">
+  <origin xyz="-0.0371 0.0 0.083" rpy="0 0 0"/>
+  <parent link="joint_2_1"/>
+  <child link="link_2_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="link_2_to_joint_3" type="continuous">
+  <origin xyz="0.0 -0.0 0.392" rpy="0 0 0"/>
+  <parent link="link_2_1"/>
+  <child link="joint_3_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="joint_3_to_link_3" type="fixed">
+  <origin xyz="0.0371 0.0 0.083" rpy="0 0 0"/>
+  <parent link="joint_3_1"/>
+  <child link="link_3_1"/>
+</joint>
+
+<joint name="link_3_to_joint_4" type="fixed">
+  <origin xyz="0.0 0.0 0.169" rpy="0 0 0"/>
+  <parent link="link_3_1"/>
+  <child link="joint_4_1"/>
+</joint>
+
+<joint name="joint_4_to_joint_5" type="continuous">
+  <origin xyz="-0.0371 -0.0 0.083" rpy="0 0 0"/>
+  <parent link="joint_4_1"/>
+  <child link="joint_5_1"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="joint_5_to_joint_6" type="continuous">
+  <origin xyz="-0.065 0.0 -0.0408" rpy="0 0 0"/>
+  <parent link="joint_5_1"/>
+  <child link="joint_6_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="joint_6_to_tool0" type="continuous">
+  <parent link="joint_6_1"/>
+  <child link="tool0"/>
+  <origin xyz="0 -0.0408 -0.065" rpy="0 0 0"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+</robot>
