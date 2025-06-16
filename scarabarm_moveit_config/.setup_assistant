@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: scarabarm_description
+    relative_path: urdf/robots/scarabarm_urdf.xacro
+  SRDF:
+    relative_path: config/scarabarm/scarabarm.srdf
+  CONFIG:
+    author_name: student
+    author_email: student@todo.todo
+    generated_timestamp: 1734048000

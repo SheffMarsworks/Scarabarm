@@ -1,0 +1,38 @@
+# joint_limits.yaml
+# MoveIt uses this file to determine the maximum velocity, acceleration,
+# and other limits for each joint.
+
+default_velocity_scaling_factor: 1.0
+default_acceleration_scaling_factor: 1.0
+
+joint_limits:
+  joint_1_to_joint_2:
+    has_velocity_limits: true
+    max_velocity: 2.8 # rad/s - UPDATE THIS
+    has_acceleration_limits: true
+    max_acceleration: 5.0 # rad/s^2 - UPDATE THIS
+  joint_2_to_link_2:
+    has_velocity_limits: true
+    max_velocity: 2.8 # rad/s - UPDATE THIS
+    has_acceleration_limits: true
+    max_acceleration: 5.0 # rad/s^2 - UPDATE THIS
+  link_2_to_joint_3:
+    has_velocity_limits: true
+    max_velocity: 2.8 # rad/s - UPDATE THIS
+    has_acceleration_limits: true
+    max_acceleration: 5.0 # rad/s^2 - UPDATE THIS
+  joint_4_to_joint_5:
+    has_velocity_limits: true
+    max_velocity: 2.8 # rad/s - UPDATE THIS
+    has_acceleration_limits: true
+    max_acceleration: 5.0 # rad/s^2 - UPDATE THIS
+  joint_5_to_joint_6:
+    has_velocity_limits: true
+    max_velocity: 2.8 # rad/s - UPDATE THIS
+    has_acceleration_limits: true
+    max_acceleration: 5.0 # rad/s^2 - UPDATE THIS
+  joint_6_to_tool0:
+    has_velocity_limits: true
+    max_velocity: 2.8 # rad/s - UPDATE THIS
+    has_acceleration_limits: true
+    max_acceleration: 5.0 # rad/s^2 - UPDATE THIS
