@@ -13,9 +13,10 @@ find_package(ament_cmake REQUIRED)
 
 # Copy necessary files to designated locations in the project
 install (
-  DIRECTORY meshes urdf
+  DIRECTORY meshes urdf launch worlds
   DESTINATION share/${PROJECT_NAME}
 )
+
 
 
 # Automates the process of setting up linting for the package, which
