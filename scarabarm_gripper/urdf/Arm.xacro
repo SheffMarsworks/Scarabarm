@@ -298,7 +298,7 @@
   </collision>
 </link>
 
-<link name="finger_x__1__2">
+<link name="finger_y_1">
   <inertial>
     <origin xyz="0.00471422297682203 -0.10166731439630511 -0.008798784722803266" rpy="0 0 0"/>
     <mass value="1.0421837130259886"/>
@@ -307,19 +307,19 @@
   <visual>
     <origin xyz="0.137129 0.21915 -1.036681" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Arm_description)/meshes/finger_x__1__2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find Arm_description)/meshes/finger_y_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.137129 0.21915 -1.036681" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Arm_description)/meshes/finger_x__1__2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find Arm_description)/meshes/finger_y_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="finger_x__1__2">
+<link name="finger_y_1">
   <inertial>
     <origin xyz="-0.016272777023177976 -0.08066731439630512 -0.009532784722803278" rpy="0 0 0"/>
     <mass value="1.0421837130259886"/>
@@ -328,56 +328,56 @@
   <visual>
     <origin xyz="0.116142 0.24015 -1.037415" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Arm_description)/meshes/finger_x__1__2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find Arm_description)/meshes/finger_y_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.116142 0.24015 -1.037415" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Arm_description)/meshes/finger_x__1__2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find Arm_description)/meshes/finger_y_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="finger_x__2__2">
+<link name="finger_x_1">
   <inertial>
-    <origin xyz="-0.004088872851647676 -0.10166731439614185 -0.009106404388634859" rpy="0 0 0"/>
-    <mass value="1.0421837130214082"/>
-    <inertia ixx="0.003772" iyy="0.000203" izz="0.003889" ixy="-4.7e-05" iyz="-1e-06" ixz="-4e-06"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.067672 0.21915 -1.039108" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find Arm_description)/meshes/finger_x__2__2.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.067672 0.21915 -1.039108" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find Arm_description)/meshes/finger_x__2__2.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="finger_x__2__2">
-  <inertial>
-    <origin xyz="0.01689812714835233 -0.08066731439614186 -0.008373404388634986" rpy="0 0 0"/>
+    <origin xyz="0.016898126757767473 -0.08066731439613975 -0.008373405428296676" rpy="0 0 0"/>
     <mass value="1.0421837130214082"/>
     <inertia ixx="0.003772" iyy="0.000203" izz="0.003889" ixy="-4.7e-05" iyz="-1e-06" ixz="-4e-06"/>
   </inertial>
   <visual>
     <origin xyz="0.088659 0.24015 -1.038375" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Arm_description)/meshes/finger_x__2__2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find Arm_description)/meshes/finger_x_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.088659 0.24015 -1.038375" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find Arm_description)/meshes/finger_x__2__2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find Arm_description)/meshes/finger_x_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="finger_x_1">
+  <inertial>
+    <origin xyz="-0.0040888732422325325 -0.10166731439613974 -0.009106405428296549" rpy="0 0 0"/>
+    <mass value="1.0421837130214082"/>
+    <inertia ixx="0.003772" iyy="0.000203" izz="0.003889" ixy="-4.7e-05" iyz="-1e-06" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.067672 0.21915 -1.039108" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Arm_description)/meshes/finger_x_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.067672 0.21915 -1.039108" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Arm_description)/meshes/finger_x_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -470,31 +470,31 @@
   <axis xyz="-0.0 -1.0 -0.0"/>
 </joint>
 
-<joint name="Revolute 78" type="continuous">
+<joint name="Revolute 85" type="continuous">
   <origin xyz="0.021316 -0.101 -0.008661" rpy="0 0 0"/>
   <parent link="outer_link_y_1"/>
-  <child link="finger_x__1__2"/>
+  <child link="finger_y_1"/>
   <axis xyz="-0.034921 -0.0 0.99939"/>
 </joint>
 
-<joint name="Revolute 79" type="continuous">
+<joint name="Revolute 86" type="continuous">
   <origin xyz="3.5e-05 -0.08 -0.000999" rpy="0 0 0"/>
   <parent link="inner_link_y_1"/>
-  <child link="finger_x__1__2"/>
+  <child link="finger_y_1"/>
   <axis xyz="-0.034921 -0.0 0.99939"/>
 </joint>
 
-<joint name="Revolute 80" type="continuous">
-  <origin xyz="-0.020659 -0.101 -0.010128" rpy="0 0 0"/>
-  <parent link="outer_link_x_1"/>
-  <child link="finger_x__2__2"/>
+<joint name="Revolute 87" type="continuous">
+  <origin xyz="0.021022 -0.059 -0.000266" rpy="0 0 0"/>
+  <parent link="inner_link_x_1"/>
+  <child link="finger_x_1"/>
   <axis xyz="0.034921 0.0 -0.99939"/>
 </joint>
 
-<joint name="Revolute 81" type="continuous">
-  <origin xyz="3.5e-05 -0.08 -0.000999" rpy="0 0 0"/>
-  <parent link="inner_link_x_1"/>
-  <child link="finger_x__2__2"/>
+<joint name="Revolute 88" type="continuous">
+  <origin xyz="0.000328 -0.08 -0.009395" rpy="0 0 0"/>
+  <parent link="outer_link_x_1"/>
+  <child link="finger_x_1"/>
   <axis xyz="0.034921 0.0 -0.99939"/>
 </joint>
 
