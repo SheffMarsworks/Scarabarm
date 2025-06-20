@@ -1,76 +1,81 @@
-# filepath: src/scarabarm_ros2/scarabarm_ros2/launch/gazebo.launch.py
 import os
-import xacro
+from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, RegisterEventHandler
-from launch.event_handlers import OnProcessStart
+from launch.actions import IncludeLaunchDescription
+from launch.substitutions import LaunchConfiguration,PythonExpression
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
-from ament_index_python.packages import get_package_share_directory
+from launch.actions import AppendEnvironmentVariable, DeclareLaunchArgument, ExecuteProcess, IncludeLaunchDescription
+from launch.actions import RegisterEventHandler
+from launch.event_handlers import OnProcessExit
+import xacro
+from os.path import join
 
 def generate_launch_description():
 
-    pkg_scarabarm_description = get_package_share_directory('scarabarm_description')
+    # Package Directories
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
+    pkg_ros_gz_rbot = get_package_share_directory('Arm_description')
 
-    # Path to the xacro file
-    xacro_file_path = os.path.join(
-        pkg_scarabarm_description,
-        'urdf',
-        'scarabarm_urdf.xacro'
-    )
+    # Parse robot description from xacro
+    robot_description_file = os.path.join(pkg_ros_gz_rbot, 'urdf', 'Arm.xacro')
+    ros_gz_bridge_config = os.path.join(pkg_ros_gz_rbot, 'config', 'ros_gz_bridge_gazebo.yaml')
     
-    # Process the xacro file to get the URDF XML string
-    robot_description_config = xacro.process_file(xacro_file_path)
-    robot_description = robot_description_config.toxml()
+    robot_description_config = xacro.process_file(
+        robot_description_file
+    )
+    robot_description = {'robot_description': robot_description_config.toxml()}
 
-
-    # 1. Robot State Publisher Node
-    # This node now correctly receives the processed URDF string.
-    robot_state_publisher_node = Node(
+    # Start Robot state publisher
+    robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         name='robot_state_publisher',
-        output='screen',
-        parameters=[{
-            'use_sim_time': True,
-            'robot_description': robot_description, # <-- THE FIX IS HERE
-        }]
+        output='both',
+        parameters=[robot_description],
     )
 
-    # 2. Gazebo Simulator Launch
-    gz_sim_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')
-        ),
-        launch_arguments={'gz_args': '-r'}.items()
+    # Start Gazebo Sim
+    gazebo = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(join(pkg_ros_gz_sim, "launch", "gz_sim.launch.py")),
+        launch_arguments={
+            "gz_args" : '-r -v 4 empty.sdf'
+        }.items()
     )
 
-    # 3. Spawn Entity Node (to be launched by the event handler)
-    spawn_entity_node = Node(
+    # Spawn Robot in Gazebo   
+    spawn = Node(
         package='ros_gz_sim',
         executable='create',
-        output='screen',
         arguments=[
-            '-topic', 'robot_description',
-            '-name', 'scarabarm',
-            '-z', '0.1',
-            '-allow_renaming', 'true'
+            "-topic", "/robot_description",
+            "-name", "Arm",
+            "-allow_renaming", "true",
+            "-z", "0.32",
+            "-x", "0.0",
+            "-y", "0.0",
+            "-Y", "0.0"
+        ],            
+        output='screen',
+    )
+
+    # Bridge ROS topics and Gazebo messages for establishing communication
+    start_gazebo_ros_bridge_cmd = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        parameters=[{
+          'config_file': ros_gz_bridge_config,
+        }],
+        output='screen'
+      )      
+
+
+    return LaunchDescription(
+        [
+            # Nodes and Launches
+            gazebo,
+            spawn,
+            start_gazebo_ros_bridge_cmd,
+            robot_state_publisher,
         ]
     )
-
-    # 4. Event Handler to delay the spawner
-    # This ensures the robot is spawned only after the robot_state_publisher is ready.
-    spawn_delay_handler = RegisterEventHandler(
-        event_handler=OnProcessStart(
-            target_action=robot_state_publisher_node,
-            on_start=[spawn_entity_node],
-        )
-    )
-
-    # Launch Description
-    return LaunchDescription([
-        gz_sim_launch,
-        robot_state_publisher_node,
-        spawn_delay_handler,
-    ])

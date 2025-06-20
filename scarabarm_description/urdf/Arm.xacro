@@ -277,6 +277,20 @@
   </collision>
 </link>
 
+<link name="flange">
+  <inertial>
+    <origin xyz="-2.7109794194235537e-07 -0.049212591624729685 -1.90925212129045e-06" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0.005999" iyy="0.00434" izz="0.007415" ixy="0.0" iyz="-0.0" ixz="-5e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1021 0.0408 -1.0293" rpy="0 0 0"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1021 0.0408 -1.0293" rpy="0 0 0"/>
+  </collision>
+</link>
+
 <link name="gripper_base_1">
   <inertial>
     <origin xyz="-2.7109794194235537e-07 -0.049212591624729685 -1.90925212129045e-06" rpy="0 0 0"/>
@@ -318,7 +332,7 @@
     </geometry>
   </collision>
 </link>
-
+<!--
 <link name="finger_y_1">
   <inertial>
     <origin xyz="-0.016272777023177976 -0.08066731439630512 -0.009532784722803278" rpy="0 0 0"/>
@@ -339,7 +353,8 @@
     </geometry>
   </collision>
 </link>
-
+-->
+<!--
 <link name="finger_x_1">
   <inertial>
     <origin xyz="0.016898126757767473 -0.08066731439613975 -0.008373405428296676" rpy="0 0 0"/>
@@ -360,7 +375,7 @@
     </geometry>
   </collision>
 </link>
-
+-->
 <link name="finger_x_1">
   <inertial>
     <origin xyz="-0.0040888732422325325 -0.10166731439613974 -0.009106405428296549" rpy="0 0 0"/>
@@ -382,120 +397,151 @@
   </collision>
 </link>
 
-<joint name="Rigid 49" type="fixed">
+<joint name="base_link to joint_1" type="fixed">
   <origin xyz="0.0 0.0 0.05" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="joint_1_1"/>
 </joint>
 
-<joint name="Rigid 53" type="fixed">
+<joint name="joint_3 to link_3" type="fixed">
   <origin xyz="0.0371 0.0 0.083" rpy="0 0 0"/>
   <parent link="joint_3_1"/>
   <child link="link_3_1"/>
 </joint>
 
-<joint name="Revolute 57" type="continuous">
+<joint name="link_2 to joint_3" type="continuous">
   <origin xyz="0.0 -0.0 0.392" rpy="0 0 0"/>
   <parent link="link_2_1"/>
   <child link="joint_3_1"/>
   <axis xyz="1.0 -0.0 -0.0"/>
 </joint>
 
-<joint name="Revolute 58" type="continuous">
+<joint name="joint_2 to link_2" type="continuous">
   <origin xyz="-0.0371 0.0 0.083" rpy="0 0 0"/>
   <parent link="joint_2_1"/>
   <child link="link_2_1"/>
   <axis xyz="-1.0 0.0 0.0"/>
 </joint>
 
-<joint name="Revolute 59" type="continuous">
+<joint name="joint_1 to joint_2" type="continuous">
   <origin xyz="-0.0 0.0 0.0635" rpy="0 0 0"/>
   <parent link="joint_1_1"/>
   <child link="joint_2_1"/>
   <axis xyz="0.0 0.0 1.0"/>
 </joint>
 
-<joint name="Revolute 60" type="continuous">
+<joint name="joint_5 to joint_6" type="continuous">
   <origin xyz="-0.065 0.0 0.0408" rpy="0 0 0"/>
   <parent link="joint_5_1"/>
   <child link="joint_6_1"/>
   <axis xyz="0.0 -0.0 1.0"/>
 </joint>
 
-<joint name="Revolute 61" type="continuous">
+<joint name="joint_4 to joint_5" type="continuous">
   <origin xyz="-0.0371 -0.0 0.083" rpy="0 0 0"/>
   <parent link="joint_4_1"/>
   <child link="joint_5_1"/>
   <axis xyz="-1.0 -0.0 -0.0"/>
 </joint>
 
-<joint name="Rigid 62" type="fixed">
+<joint name="link_3 to joint_4" type="fixed">
   <origin xyz="0.0 0.0 0.169" rpy="0 0 0"/>
   <parent link="link_3_1"/>
   <child link="joint_4_1"/>
 </joint>
 
-<joint name="Revolute 70" type="continuous">
+<joint name="gripper_base to inner_link_y" type="continuous">
   <origin xyz="-0.014077 -0.11935 0.009114" rpy="0 0 0"/>
   <parent link="gripper_base_1"/>
   <child link="inner_link_y_1"/>
-  <axis xyz="0.034921 0.0 -0.99939"/>
+  <axis xyz="0.0 0.0 -1.0"/>
 </joint>
 
-<joint name="Revolute 72" type="continuous">
+<joint name="gripper_base to outer_link_y" type="continuous">
   <origin xyz="-0.035358 -0.09835 0.016776" rpy="0 0 0"/>
   <parent link="gripper_base_1"/>
   <child link="outer_link_y_1"/>
-  <axis xyz="0.034921 0.0 -0.99939"/>
+  <axis xyz="0.0 0.0 -1.0"/>
 </joint>
 
-<joint name="Revolute 75" type="continuous">
+<joint name="gripper_base to outer_link_x" type="continuous">
   <origin xyz="0.0341 -0.09835 0.019203" rpy="0 0 0"/>
   <parent link="gripper_base_1"/>
   <child link="outer_link_x_1"/>
-  <axis xyz="-0.034921 -0.0 0.99939"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
 </joint>
 
-<joint name="Revolute 76" type="continuous">
+<joint name="gripper_base to inner_link_x" type="continuous">
   <origin xyz="0.013406 -0.11935 0.010074" rpy="0 0 0"/>
   <parent link="gripper_base_1"/>
   <child link="inner_link_x_1"/>
-  <axis xyz="0.034921 0.0 -0.99939"/>
+  <axis xyz="0.0 0.0 -1.0"/>
 </joint>
 
-<joint name="Revolute 77" type="continuous">
+<!--
+<joint name="joint_6 to gripper_base" type="continuous">
   <origin xyz="0.0 -0.0408 0.065" rpy="0 0 0"/>
   <parent link="joint_6_1"/>
   <child link="gripper_base_1"/>
   <axis xyz="-0.0 -1.0 -0.0"/>
 </joint>
-
-<joint name="Revolute 85" type="continuous">
-  <origin xyz="0.021316 -0.101 -0.008661" rpy="0 0 0"/>
-  <parent link="outer_link_y_1"/>
-  <child link="finger_y_1"/>
-  <axis xyz="-0.034921 -0.0 0.99939"/>
+-->
+<joint name="joint_6 to flange" type="continuous">
+  <origin xyz="0.0 -0.0408 0.065" rpy="0 0 0"/>
+  <parent link="joint_6_1"/>
+  <child link="flange"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
 </joint>
 
-<joint name="Revolute 86" type="continuous">
+<joint name="flange to gripper_base" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="flange"/>
+  <child link="gripper_base_1"/>
+</joint>
+
+<!--
+<joint name="inner_link_y to finger_y" type="continuous">
   <origin xyz="3.5e-05 -0.08 -0.000999" rpy="0 0 0"/>
   <parent link="inner_link_y_1"/>
   <child link="finger_y_1"/>
   <axis xyz="-0.034921 -0.0 0.99939"/>
 </joint>
 
-<joint name="Revolute 87" type="continuous">
+<joint name="outer_link_y to finger_y" type="continuous">
+  <origin xyz="0.021316 -0.101 -0.008661" rpy="0 0 0"/>
+  <parent link="outer_link_y_1"/>
+  <child link="finger_y_1"/>
+  <axis xyz="-0.034921 -0.0 0.99939"/>
+</joint>
+-->
+
+<joint name="inner_link_y to finger_y" type="continuous">
+  <origin xyz="0.021316 -0.101 -0.000999" rpy="0 0 0"/>
+  <parent link="inner_link_y_1"/>
+  <child link="finger_y_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="outer_link_y to finger_y" type="continuous">
+  <origin xyz="3.5e-05 -0.08 -0.008661" rpy="0 0 0"/>
+  <parent link="outer_link_y_1"/>
+  <child link="finger_y_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+
+<joint name="inner_link_x to inger_x" type="continuous">
   <origin xyz="0.021022 -0.059 -0.000266" rpy="0 0 0"/>
   <parent link="inner_link_x_1"/>
   <child link="finger_x_1"/>
-  <axis xyz="0.034921 0.0 -0.99939"/>
+  <axis xyz="0.0 0.0 -1.0"/>
 </joint>
 
-<joint name="Revolute 88" type="continuous">
+<joint name="outer_link_x to finger_x" type="continuous">
   <origin xyz="0.000328 -0.08 -0.009395" rpy="0 0 0"/>
   <parent link="outer_link_x_1"/>
   <child link="finger_x_1"/>
-  <axis xyz="0.034921 0.0 -0.99939"/>
+  <axis xyz="0.0 0.0 -1.0"/>
 </joint>
 
 </robot>
