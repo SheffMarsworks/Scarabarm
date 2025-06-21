@@ -10,18 +10,22 @@ moveit_simple_controller_manager:
   scarab_arm_controller:
     type: FollowJointTrajectory
     joints:
-      - joint_1 to joint_2
-      - joint_2 to link_2
-      - link_2 to joint_3
-      - joint_4 to joint_5
-      - joint_5 to joint_6
-      - joint_6 to flange
+      - joint_1_to_joint_2
+      - joint_2_to_link_2
+      - link_2_to_joint_3
+      - joint_4_to_joint_5
+      - joint_5_to_joint_6
+      - joint_6_to_flange
     action_ns: follow_joint_trajectory
     default: true
   gripper_controller:
     type: GripperCommand
     joints:
-      - gripper_base to outer_link_x
-      - gripper_base to outer_link_y
+      - base_to_inner_x
+      - base_to_inner_y
+      - base_to_outer_x
+      - outer_x_to_finger_x
+      - base_to_outer_y
+      - outer_y_to_finger_y
     action_ns: gripper_cmd
     default: true

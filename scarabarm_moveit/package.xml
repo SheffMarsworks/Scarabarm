@@ -4,9 +4,9 @@
   <name>scarabarm_moveit</name>
   <version>0.3.0</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the Arm with the MoveIt Motion Planning Framework
+     An automatically generated package with all the configuration and launch files for using the full_scrab_arm with the MoveIt Motion Planning Framework
   </description>
-  <maintainer email="spes004@gmail.com">spes004@gmail.com</maintainer>
+  <maintainer email="dkim41@sheffield.ac.uk">dkim41@sheffield.ac.uk</maintainer>
 
   <license>BSD</license>
 
@@ -14,7 +14,7 @@
   <url type="bugtracker">https://github.com/ros-planning/moveit2/issues</url>
   <url type="repository">https://github.com/ros-planning/moveit2</url>
 
-  <author email="spes004@gmail.com">spes004@gmail.com</author>
+  <author email="dkim41@sheffield.ac.uk">dkim41@sheffield.ac.uk</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
@@ -30,8 +30,8 @@
        We don't include them by default to prevent installing gazebo and all its dependencies. -->
   <!-- <exec_depend>joint_trajectory_controller</exec_depend> -->
   <!-- <exec_depend>gazebo_ros_control</exec_depend> -->
-  <exec_depend>Arm_description</exec_depend>
   <exec_depend>controller_manager</exec_depend>
+  <exec_depend>full_scrab_arm</exec_depend>
   <exec_depend>moveit_configs_utils</exec_depend>
   <exec_depend>moveit_ros_move_group</exec_depend>
   <exec_depend>moveit_ros_visualization</exec_depend>

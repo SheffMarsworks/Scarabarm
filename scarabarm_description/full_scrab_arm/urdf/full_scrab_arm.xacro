@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="full_scrab_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Include Xacro files from original packages -->
+  <xacro:include filename="$(find Arm_description)/urdf/Arm.xacro"/>
+  <xacro:include filename="$(find gripper_sim_description)/urdf/gripper_sim.xacro"/>
+
+  <!-- Connect gripper to arm flange -->
+  <joint name="arm_to_gripper" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 3.14159"/>
+    <parent link="flange"/>
+    <child link="gripper_base_link"/>
+  </joint>
+
+</robot>

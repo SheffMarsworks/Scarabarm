@@ -1,16 +1,17 @@
 moveit_setup_assistant_config:
   urdf:
-    package: Arm_description
-    relative_path: urdf/Arm.xacro
+    package: full_scrab_arm
+    relative_path: urdf/full_scrab_arm.xacro
   srdf:
-    relative_path: config/Arm.srdf
+    relative_path: config/full_scrab_arm.srdf
   package_settings:
-    author_name: spes004@gmail.com
-    author_email: spes004@gmail.com
-    generated_timestamp: 1750444190
+    author_name: dkim41@sheffield.ac.uk
+    author_email: dkim41@sheffield.ac.uk
+    generated_timestamp: 1750522774
   control_xacro:
     command:
       - position
+      - velocity
     state:
       - position
       - velocity
@@ -20,6 +21,7 @@ moveit_setup_assistant_config:
   control_xacro:
     command:
       - position
+      - velocity
     state:
       - position
       - velocity

@@ -3,5 +3,5 @@ from moveit_configs_utils.launches import generate_warehouse_db_launch
 
 
 def generate_launch_description():
-    moveit_config = MoveItConfigsBuilder("Arm", package_name="scarabarm_moveit").to_moveit_configs()
+    moveit_config = MoveItConfigsBuilder("full_scrab_arm", package_name="scarabarm_moveit").to_moveit_configs()
     return generate_warehouse_db_launch(moveit_config)
