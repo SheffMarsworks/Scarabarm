@@ -28,7 +28,7 @@ public:
     hw_velocities_.resize(num_joints, 0.0);
     hw_commands_.resize(num_joints, 0.0);
     hw_vel_cmds_.resize(num_joints, 0.0);
-    gear_ratios_.resize(num_joints, 1.0);  // default to 1.0
+    gear_ratios_.resize(num_joints, 1.0);
     joint_names_.reserve(num_joints);
 
     for (size_t i = 0; i < num_joints; ++i) {
@@ -40,7 +40,7 @@ public:
       else if (joint.name == "joint_5" || joint.name == "joint_6")
         gear_ratios_[i] = 10.0;
       else
-        gear_ratios_[i] = 1.0;  // gripper or unknown, keep 1:1
+        gear_ratios_[i] = 1.0;  // default or gripper
     }
 
     socket_ = socket(PF_CAN, SOCK_RAW, CAN_RAW);
@@ -87,7 +87,7 @@ public:
   }
 
   hardware_interface::return_type read(const rclcpp::Time&, const rclcpp::Duration&) override {
-    // TODO: implement CAN read and parse encoder feedback from ODrive if needed
+    // TODO: Optionally read encoder feedback from CAN bus
     return hardware_interface::return_type::OK;
   }
 
@@ -101,9 +101,12 @@ public:
 
       double motor_turns = cmd_turns * ratio;
       if (!send_odrive_position_command(axis_id, motor_turns)) {
-        RCLCPP_ERROR(rclcpp::get_logger("OdriveSystem"), "Failed to send pos to %s (axis %d)", joint.c_str(), axis_id);
+        RCLCPP_ERROR(rclcpp::get_logger("OdriveSystem"),
+                     "Failed to send pos to %s (axis %d)", joint.c_str(), axis_id);
       } else {
-        RCLCPP_INFO(rclcpp::get_logger("OdriveSystem"), "Sent %s: %.3f (motor turns) to axis %d", joint.c_str(), motor_turns, axis_id);
+        RCLCPP_INFO_THROTTLE(
+          rclcpp::get_logger("OdriveSystem"), logger_clock_, 1000,
+          "Sent %.3f motor turns to %s (axis %d)", motor_turns, joint.c_str(), axis_id);
       }
     }
 
@@ -118,6 +121,7 @@ private:
   std::vector<double> hw_commands_;
   std::vector<double> hw_vel_cmds_;
   std::vector<double> gear_ratios_;
+  rclcpp::Clock logger_clock_{RCL_STEADY_TIME};
 
   int get_axis_id(const std::string& joint) {
     if (joint == "joint_2") return 2;
@@ -125,7 +129,7 @@ private:
     if (joint == "joint_4") return 4;
     if (joint == "joint_5") return 5;
     if (joint == "joint_6") return 6;
-    return -1;  // unknown or gripper
+    return -1;
   }
 
   bool send_odrive_position_command(uint8_t axis_id, double turns) {
@@ -133,12 +137,12 @@ private:
     int32_t encoder_counts = static_cast<int32_t>(turns * counts_per_rev);
 
     struct can_frame frame{};
-    frame.can_id = 0x00C | (axis_id << 5);  // ID for position command
+    frame.can_id = 0x00C | (axis_id << 5);  // Position command ID
     frame.can_dlc = 8;
     std::memcpy(frame.data, &encoder_counts, sizeof(int32_t));
-    std::memset(frame.data + 4, 0, 4);  // velocity_ff, current_ff
+    std::memset(frame.data + 4, 0, 4);  // velocity_ff + current_ff
 
-    return write(socket_, &frame, sizeof(frame)) == sizeof(frame);
+    return ::write(socket_, &frame, sizeof(frame)) == sizeof(frame);
   }
 };
 
