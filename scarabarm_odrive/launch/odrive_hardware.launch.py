@@ -1,48 +1,53 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from ament_index_python.packages import get_package_share_directory
+from launch.substitutions import Command
 import os
-import xacro
+
+from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
-    # Point to MoveIt config package
-    moveit_pkg = get_package_share_directory('scarabarm_moveit')
+    pkg_path = get_package_share_directory('scarabarm_moveit')
 
-    # URDF (xacro -> XML)
-    urdf_path = os.path.join(moveit_pkg, 'config', 'full_scrab_arm.urdf.xacro')
-    initial_positions_file = os.path.join(moveit_pkg, 'config', 'initial_positions.yaml')
     robot_description = {
-        'robot_description': xacro.process_file(
-            urdf_path,
-            mappings={'initial_positions_file': initial_positions_file}
-        ).toxml()
+        'robot_description': Command([
+            'xacro ',
+            os.path.join(pkg_path, 'urdf', 'full_scrab_arm.urdf.xacro')
+        ])
     }
 
-    # Controller config
-    controllers_yaml = os.path.join(moveit_pkg, 'config', 'ros2_controllers.yaml')
+    controllers_yaml = os.path.join(pkg_path, 'config', 'ros2_controllers.yaml')
 
-    # ros2_control node
-    ros2_control_node = Node(
+    controller_manager = Node(
         package='controller_manager',
         executable='ros2_control_node',
         parameters=[robot_description, controllers_yaml],
-        output='screen',
+        output='screen'
     )
 
-    # Spawn controller nodes
-    joint_state_spawner = Node(
+    joint_state_broadcaster_spawner = Node(
         package='controller_manager',
         executable='spawner',
         arguments=['joint_state_broadcaster'],
+        output='screen'
     )
+
     arm_controller_spawner = Node(
         package='controller_manager',
         executable='spawner',
         arguments=['scarab_arm_controller'],
+        output='screen'
+    )
+
+    gripper_controller_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['gripper_controller'],
+        output='screen'
     )
 
     return LaunchDescription([
-        ros2_control_node,
-        joint_state_spawner,
-        arm_controller_spawner
+        controller_manager,
+        joint_state_broadcaster_spawner,
+        arm_controller_spawner,
+        gripper_controller_spawner,
     ])

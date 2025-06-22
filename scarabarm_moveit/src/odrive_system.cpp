@@ -45,14 +45,14 @@ public:
 
     socket_ = socket(PF_CAN, SOCK_RAW, CAN_RAW);
     if (socket_ < 0) {
-      RCLCPP_ERROR(rclcpp::get_logger("OdriveSystem"), "Failed to open CAN socket");
+      RCLCPP_ERROR(logger_, "Failed to open CAN socket");
       return CallbackReturn::ERROR;
     }
 
     struct ifreq ifr;
     std::strcpy(ifr.ifr_name, "can0");
     if (ioctl(socket_, SIOCGIFINDEX, &ifr) < 0) {
-      RCLCPP_ERROR(rclcpp::get_logger("OdriveSystem"), "CAN ioctl failed");
+      RCLCPP_ERROR(logger_, "CAN ioctl failed");
       return CallbackReturn::ERROR;
     }
 
@@ -60,11 +60,11 @@ public:
     addr.can_family = AF_CAN;
     addr.can_ifindex = ifr.ifr_ifindex;
     if (bind(socket_, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
-      RCLCPP_ERROR(rclcpp::get_logger("OdriveSystem"), "CAN bind failed");
+      RCLCPP_ERROR(logger_, "CAN bind failed");
       return CallbackReturn::ERROR;
     }
 
-    RCLCPP_INFO(rclcpp::get_logger("OdriveSystem"), "Initialized %zu joints and CAN socket.", num_joints);
+    RCLCPP_INFO(logger_, "Initialized %zu joints and CAN socket.", num_joints);
     return CallbackReturn::SUCCESS;
   }
 
@@ -101,11 +101,11 @@ public:
 
       double motor_turns = cmd_turns * ratio;
       if (!send_odrive_position_command(axis_id, motor_turns)) {
-        RCLCPP_ERROR(rclcpp::get_logger("OdriveSystem"),
+        RCLCPP_ERROR(logger_,
                      "Failed to send pos to %s (axis %d)", joint.c_str(), axis_id);
       } else {
         RCLCPP_INFO_THROTTLE(
-          rclcpp::get_logger("OdriveSystem"), logger_clock_, 1000,
+          logger_, *logger_clock_, 1000,
           "Sent %.3f motor turns to %s (axis %d)", motor_turns, joint.c_str(), axis_id);
       }
     }
@@ -121,16 +121,18 @@ private:
   std::vector<double> hw_commands_;
   std::vector<double> hw_vel_cmds_;
   std::vector<double> gear_ratios_;
-  rclcpp::Clock logger_clock_{RCL_STEADY_TIME};
+  rclcpp::Logger logger_ = rclcpp::get_logger("OdriveSystem");
+  std::shared_ptr<rclcpp::Clock> logger_clock_ = std::make_shared<rclcpp::Clock>(RCL_STEADY_TIME);
 
-  int get_axis_id(const std::string& joint) {
-    if (joint == "joint_2") return 2;
-    if (joint == "joint_3") return 3;
-    if (joint == "joint_4") return 4;
-    if (joint == "joint_5") return 5;
-    if (joint == "joint_6") return 6;
-    return -1;
-  }
+int get_axis_id(const std::string& joint) {
+  if (joint == "joint_1_to_joint_2") return 2;
+  if (joint == "joint_2_to_link_2") return 3;
+  if (joint == "link_2_to_joint_3") return 4;
+  if (joint == "joint_4_to_joint_5") return 5;
+  if (joint == "joint_5_to_joint_6") return 6;
+  if (joint == "joint_6_to_flange") return 7;
+  return -1;
+}
 
   bool send_odrive_position_command(uint8_t axis_id, double turns) {
     const int32_t counts_per_rev = 8192;

@@ -1,11 +1,22 @@
 from launch import LaunchDescription
-from launch_ros.actions import Node
 from launch.actions import IncludeLaunchDescription, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
 import os
 import xacro
+import yaml
+
+
+# Helper to load YAML files manually
+def load_yaml(package_name, file_path):
+    abs_path = os.path.join(
+        get_package_share_directory(package_name),
+        file_path
+    )
+    with open(abs_path, 'r') as f:
+        return yaml.safe_load(f)
 
 
 def generate_launch_description():
@@ -26,14 +37,16 @@ def generate_launch_description():
         robot_description_semantic = {'robot_description_semantic': f.read()}
 
     # Kinematics and controllers
-    kinematics_yaml = os.path.join(moveit_config_pkg, 'config', 'kinematics.yaml')
+    robot_description_kinematics = {
+        'robot_description_kinematics': load_yaml('scarabarm_moveit', 'config/kinematics.yaml')
+    }
     controllers_yaml = os.path.join(moveit_config_pkg, 'config', 'ros2_controllers.yaml')
     moveit_controllers_yaml = os.path.join(moveit_config_pkg, 'config', 'moveit_controllers.yaml')
 
     # RViz config
     rviz_config_path = os.path.join(moveit_config_pkg, 'config', 'moveit.rviz')
 
-    # Controller manager node
+    # Controller manager
     controller_manager = Node(
         package='controller_manager',
         executable='ros2_control_node',
@@ -41,7 +54,7 @@ def generate_launch_description():
         output='both'
     )
 
-    # Robot State Publisher
+    # Robot state publisher
     robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
@@ -49,29 +62,26 @@ def generate_launch_description():
         output='screen'
     )
 
-
-    # Joint state broadcaster
+    # Spawners
     joint_state_broadcaster = Node(
         package='controller_manager',
         executable='spawner',
         arguments=['joint_state_broadcaster'],
     )
 
-    # Arm controller
     arm_controller = Node(
         package='controller_manager',
         executable='spawner',
         arguments=['scarab_arm_controller'],
     )
 
-    # Gripper controller
     gripper_controller = Node(
         package='controller_manager',
         executable='spawner',
         arguments=['gripper_controller'],
     )
 
-    # MoveGroup
+    # MoveGroup launch
     move_group_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(moveit_config_pkg, 'launch', 'move_group.launch.py')
@@ -79,7 +89,7 @@ def generate_launch_description():
         launch_arguments={
             'robot_description': robot_description['robot_description'],
             'robot_description_semantic': robot_description_semantic['robot_description_semantic'],
-            'kinematics_yaml': kinematics_yaml,
+            'robot_description_kinematics': robot_description_kinematics['robot_description_kinematics'],
             'moveit_controller_yaml': moveit_controllers_yaml,
             'rviz_config': rviz_config_path,
             'use_fake_hardware': 'false',
@@ -87,8 +97,7 @@ def generate_launch_description():
         }.items()
     )
 
-
-    # Explicitly launch RViz2
+    # RViz
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
@@ -99,11 +108,10 @@ def generate_launch_description():
 
     return LaunchDescription([
         controller_manager,
-        robot_state_publisher,  # <-- ADD THIS LINE
+        robot_state_publisher,
         TimerAction(period=3.0, actions=[joint_state_broadcaster]),
         TimerAction(period=4.0, actions=[arm_controller]),
         TimerAction(period=5.0, actions=[gripper_controller]),
         move_group_launch,
         TimerAction(period=6.0, actions=[rviz_node])
     ])
-

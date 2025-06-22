@@ -1,31 +1,14 @@
-# MoveIt uses this configuration for controller management
+controller_names:
+  - scarab_arm_controller
 
-moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
-
-moveit_simple_controller_manager:
-  controller_names:
-    - scarab_arm_controller
-    - gripper_controller
-
-  scarab_arm_controller:
-    type: FollowJointTrajectory
-    joints:
-      - joint_1_to_joint_2
-      - joint_2_to_link_2
-      - link_2_to_joint_3
-      - joint_4_to_joint_5
-      - joint_5_to_joint_6
-      - joint_6_to_flange
-    action_ns: follow_joint_trajectory
-    default: true
-  gripper_controller:
-    type: GripperCommand
-    joints:
-      - base_to_inner_x
-      - base_to_inner_y
-      - base_to_outer_x
-      - outer_x_to_finger_x
-      - base_to_outer_y
-      - outer_y_to_finger_y
-    action_ns: gripper_cmd
-    default: true
+scarab_arm_controller:
+  type: FollowJointTrajectory
+  action_ns: follow_joint_trajectory
+  default: true
+  joints:
+    - joint_1_to_joint_2
+    - joint_2_to_link_2
+    - link_2_to_joint_3
+    - joint_4_to_joint_5
+    - joint_5_to_joint_6
+    - joint_6_to_flange

@@ -5,11 +5,6 @@
 <xacro:include filename="$(find Arm_description)/urdf/Arm.ros2control" />
 <xacro:include filename="$(find Arm_description)/urdf/Arm.gazebo" />
 <link name="base_link">
-  <inertial>
-    <origin xyz="-5.020263307560622e-16 -1.4955452031907725e-15 -0.003500000000000514" rpy="0 0 0"/>
-    <mass value="7.347599999999994"/>
-    <inertia ixx="0.011404" iyy="0.011404" izz="0.017634" ixy="0.0" iyz="-0.0" ixz="0.0"/>
-  </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
@@ -195,9 +190,9 @@
 
 <link name="flange">
   <inertial>
-    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
-    <mass value="0.0"/>
-    <inertia ixx="0.0" iyy="0.0" izz="0.02" ixy="0.0" iyz="0.0" ixz="0.0"/>
+    <mass value="0.1"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <inertia ixx="1e-5" ixy="0.0" ixz="0.0" iyy="1e-5" iyz="0.0" izz="1e-5"/>
   </inertial>
   <visual>
     <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
