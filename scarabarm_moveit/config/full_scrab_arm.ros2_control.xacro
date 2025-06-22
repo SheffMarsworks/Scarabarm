@@ -7,8 +7,14 @@
             <hardware>
                 <!-- By default, set up controllers for simulation. This won't work on real hardware 
                 <plugin>mock_components/GenericSystem</plugin>
+
+                <plugin>odrive_can/OdriveSystemInterface</plugin>
                 -->
+
                 <plugin>odrive_control/OdriveSystem</plugin>
+
+                
+
                 
             </hardware>
             <joint name="joint_1_to_joint_2">
