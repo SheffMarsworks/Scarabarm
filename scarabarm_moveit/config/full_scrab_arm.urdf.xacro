@@ -9,6 +9,11 @@
     <xacro:include filename="full_scrab_arm.ros2_control.xacro" />
 
 
+    <!--
     <xacro:full_scrab_arm_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+    -->
+
+    <xacro:full_scrab_arm_ros2_control name="OdriveSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
 
 </robot>

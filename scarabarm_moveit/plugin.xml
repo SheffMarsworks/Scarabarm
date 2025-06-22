@@ -1,0 +1,7 @@
+<library path="odrive_system">
+  <class name="odrive_control/OdriveSystem"
+         type="odrive_control::OdriveSystem"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>Custom ODrive hardware system plugin</description>
+  </class>
+</library>
