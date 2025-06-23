@@ -34,17 +34,23 @@ install(TARGETS odrive_system
   RUNTIME DESTINATION bin
 )
 
-# Install plugin description
 install(FILES plugin.xml
   DESTINATION share/${PROJECT_NAME}
 )
 
-# Install launch, config, and setup files
-if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/launch")
-  install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
-endif()
+# launch 디렉터리 전체
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
 
-install(DIRECTORY config DESTINATION share/${PROJECT_NAME})
-install(FILES .setup_assistant DESTINATION share/${PROJECT_NAME})
+# config 디렉터리 전체 (urdf·srdf·yaml·rviz 포함)
+install(DIRECTORY config
+  DESTINATION share/${PROJECT_NAME}
+)
+
+# MoveIt Setup Assistant 메타파일 (.setup_assistant)  ※ 존재한다면
+install(FILES .setup_assistant
+  DESTINATION share/${PROJECT_NAME}
+)
 
 ament_package()
