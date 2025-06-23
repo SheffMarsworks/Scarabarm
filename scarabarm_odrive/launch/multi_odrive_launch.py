@@ -1,20 +1,18 @@
+# launch_odrives.py
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
 def generate_launch_description():
-    return LaunchDescription([
-        Node(
+    ld = LaunchDescription()
+    for axis_id in range(5):  # 0 through 4 for joints 2-6
+        ld.add_action(Node(
             package='odrive_can',
             executable='odrive_can_node',
-            name='can_node_1',
-            namespace='odrive_axis0',
-            parameters=[{'node_id': 1, 'interface': 'can0'}]
-        ),
-        Node(
-            package='odrive_can',
-            executable='odrive_can_node',
-            name='can_node_2',
-            namespace='odrive_axis1',
-            parameters=[{'node_id': 2, 'interface': 'can0'}]
-        )
-    ])
+            namespace=f'odrive_axis{axis_id}',
+            name='odrive_can_node',
+            parameters=[{
+                'node_id': axis_id,       # ODrive CAN node ID
+                'interface': 'can0'       # CAN bus interface name
+            }]
+        ))
+    return ld
