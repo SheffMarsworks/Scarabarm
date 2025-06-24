@@ -2,6 +2,9 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 import os, xacro, yaml, tempfile
+from moveit_configs_utils import MoveItConfigsBuilder   # already in your venv
+from launch.substitutions import PathJoinSubstitution        # correct module
+from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
@@ -20,8 +23,10 @@ def generate_launch_description():
     }
 
     # --- kinematics (keep path) --------------------------------------------
-    kin_yaml  = os.path.join(pkg, "config", "kinematics.yaml")
-    kin_param = {"robot_description_kinematics": kin_yaml}
+    # kin_yaml  = os.path.join(pkg, "config", "kinematics.yaml")
+    # ompl_yaml  = os.path.join(pkg, "config", "ompl_planning.yaml")
+    kinematics_yaml = PathJoinSubstitution([FindPackageShare("scarabarm_moveit"),'config','kinematics_ros2.yaml',])
+    ompl_yaml = PathJoinSubstitution([FindPackageShare("scarabarm_moveit"), "config", "ompl_planning_ros2.yaml"])
 
     # --- load your unchanged controller YAML --------------------------------
     ctrl_path = os.path.join(pkg, "config", "moveit_controllers.yaml")
@@ -74,7 +79,8 @@ def generate_launch_description():
         parameters=[
             robot_description,
             robot_description_semantic,
-            kin_param,
+            kinematics_yaml,      # ← now a **file**, not a literal string
+            ompl_yaml,
             tmp_file.name
         ])
 
