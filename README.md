@@ -1,11 +1,3 @@
-Instruction
-
-- Make folder named Marsworks
-- in terminal,
-
-  mkdir Marsworks
-
-
 # Project Marsworks: Scarab Mars Rover Arm
 ROS2 Moveit!, ROS2 Control, and hardware firmware settings for [Anatolian Rover Challenge (ARC) 2025](https://www.anatolianrover.space/arc-25-missions).
 
