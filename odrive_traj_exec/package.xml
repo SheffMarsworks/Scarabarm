@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>odrive_traj_exec</name>
+  <version>0.1.0</version>
+  <description>Executes JointTrajectory on ODrive S1 via CAN</description>
+
+  <maintainer email="you@domain.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <depend>rclpy</depend>
+  <depend>trajectory_msgs</depend>
+  <depend>odrive_msgs</depend>           <!-- adjust if different -->
+</package>

@@ -228,6 +228,7 @@
   <parent link="joint_1" />
   <child link="joint_2" />
   <axis xyz="0.0 -0.0 1.0" />
+  <limit lower="-3.14159" upper="3.14159" effort="5" velocity="1.8"/>
 </joint>
 
 <joint name="joint_2_to_link_2" type="continuous">
@@ -235,6 +236,7 @@
   <parent link="joint_2" />
   <child link="link_2" />
   <axis xyz="-1.0 0.0 0.0" />
+  <limit lower="-1.5708" upper="1.5708" effort="5" velocity="1.8"/>
 </joint>
 
 <joint name="link_2_to_joint_3" type="continuous">
@@ -242,6 +244,7 @@
   <parent link="link_2" />
   <child link="joint_3" />
   <axis xyz="1.0 -0.0 -0.0" />
+  <limit lower="-2.79253" upper="2.79253" effort="5" velocity="1.8"/>
 </joint>
 
 <joint name="joint_3_to_link_3" type="fixed">
@@ -261,6 +264,7 @@
   <parent link="joint_4" />
   <child link="joint_5" />
   <axis xyz="-1.0 -0.0 -0.0" />
+  <limit lower="-3.14159" upper="3.14159" effort="5" velocity="1.8"/>
 </joint>
 
 <joint name="joint_5_to_joint_6" type="continuous">
@@ -268,6 +272,7 @@
   <parent link="joint_5" />
   <child link="joint_6" />
   <axis xyz="0.0 -0.0 1.0" />
+  <limit lower="-3.14159" upper="3.14159" effort="5" velocity="1.8"/>
 </joint>
 
 <joint name="joint_6_to_flange" type="continuous">
@@ -275,6 +280,7 @@
   <parent link="joint_6" />
   <child link="flange" />
   <axis xyz="-0.0 -1.0 -0.0" />
+  <limit lower="-6.28319" upper="6.28319" effort="5" velocity="1.8"/>
 </joint>
 
 
