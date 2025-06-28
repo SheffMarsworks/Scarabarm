@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<robot name="Arm" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<material name="part">
+  <color rgba="0.400 0.439 0.5137 1.000"/>
+</material>
+
+<material name="light_grey">
+  <color rgba="0.800 0.800 0.800 1.000"/>
+</material>
+
+<material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+
+</robot>
