@@ -1,13 +1,16 @@
-<?xml version="1.0"?>
 <package format="3">
   <name>odrive_traj_exec</name>
-  <version>0.1.0</version>
-  <description>Executes JointTrajectory on ODrive S1 via CAN</description>
+  <version>0.0.0</version>
+  <description>ODrive trajectory executor</description>
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
 
-  <maintainer email="you@domain.com">Your Name</maintainer>
-  <license>MIT</license>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>trajectory_msgs</exec_depend>
+  <exec_depend>odrive_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
 
-  <depend>rclpy</depend>
-  <depend>trajectory_msgs</depend>
-  <depend>odrive_msgs</depend>           <!-- adjust if different -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>
