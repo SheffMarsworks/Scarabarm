@@ -20,7 +20,7 @@ setup(
     description='ODrive trajectory executor',
     license='Apache License 2.0',
     tests_require=['pytest'],
-    eentry_points={
+    entry_points={
         'console_scripts': [
             'arm_axes = odrive_traj_exec.arm_axes:main',
         ],
