@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-import math, rclpy
+import math
+import asyncio
+import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionServer, GoalResponse, CancelResponse
 from control_msgs.action import FollowJointTrajectory
@@ -50,7 +52,8 @@ class ScarabController(Node):
                 seconds=pt.time_from_start.sec +
                         pt.time_from_start.nanosec * 1e-9)
             while self.get_clock().now() < target:
-                await rclpy.sleep(0.001)
+                # Use asyncio.sleep for non-blocking delay
+                await asyncio.sleep(0.001)
 
             # 각 관절에 명령 전송
             for idx, joint in enumerate(traj.joint_names):
