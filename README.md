@@ -5,7 +5,7 @@ ROS2 Moveit!, ROS2 Control, and hardware firmware settings for [Anatolian Rover 
 
 - Arm Simulation (Gazebo) [under development]
 - Arm Teleoperation [under development]
-- Arm control (Movit!2 + ros2control)
+- Arm control (MoveIt!2 + ros2control)
 
 <center> <img src="assets/rover_gazebo_depth.gif" alt="Scarab Rover Simulation in Gazebo"> </center>
 
@@ -14,7 +14,7 @@ ROS2 Moveit!, ROS2 Control, and hardware firmware settings for [Anatolian Rover 
 - ROS2 (Humble or later recommended)
 - Ubuntu 22.04 Jammy Jellyfish
 - Gazebo Ignition
-- Moveit!2 humble
+- MoveIt!2 humble
 - ROS2 control
 - ROS2 Package for ODrive
 
@@ -22,9 +22,9 @@ ROS2 Moveit!, ROS2 Control, and hardware firmware settings for [Anatolian Rover 
 
 1. Install dependencies:
    
-  Please follow this page for Moveit!2: https://moveit.picknik.ai/humble/doc/tutorials/getting_started/getting_started.html
+  Please follow this page for MoveIt!2: https://moveit.picknik.ai/humble/doc/tutorials/getting_started/getting_started.html
 
-3. Make a folder and clone the repository:
+2. Make a folder and clone the repository:
    ```bash
    mkdir Marsworks
    cd Marsworks
