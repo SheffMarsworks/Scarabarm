@@ -230,7 +230,9 @@ btnSend.ButtonPushedFcn = @(~,~)sendTraj();
     end
 
     function copyPose
-      q=poseVec(); drawLive(q);
+      q=poseVec(); 
+      drawLive(q);  % already calls publishJS(q)
+      % publishJS(q);  % (optional) redundant, can skip
       cla(axSnap);
       show(arm,q,"Parent",axSnap,"Visuals","on","Frames","off");
       initAxes(axSnap); recolorSnapshot();
