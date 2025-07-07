@@ -239,6 +239,7 @@ btnSend.ButtonPushedFcn = @(~,~)sendTraj();
       goalT=getTransform(arm,q,"flange","base_link");
     end
 
+
     function recalcIK
       qSeed = (rand(1,nJ)-.5)*2*pi;
       [q,~] = ik("flange",goalT,weights,qSeed);
