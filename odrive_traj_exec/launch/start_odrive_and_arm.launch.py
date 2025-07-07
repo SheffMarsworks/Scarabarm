@@ -72,4 +72,14 @@ def generate_launch_description():
         )]
     ))
 
+    # 6) After 25s: Start joint position executor node
+    ld.add_action(TimerAction(
+        period=26.0,
+        actions=[Node(
+            package='odrive_traj_exec',
+            executable='position_executor',
+            output='screen',
+        )]
+    ))
+
     return ld
