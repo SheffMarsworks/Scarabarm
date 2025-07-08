@@ -1,11 +1,11 @@
 # Project Marsworks: Scarab Mars Rover Arm
-ROS2 Moveit!, ROS2 Control, and hardware firmware settings for [Anatolian Rover Challenge (ARC) 2025](https://www.anatolianrover.space/arc-25-missions).
+MATLAB, ROS2 Control, and hardware firmware settings for [Anatolian Rover Challenge (ARC) 2025](https://www.anatolianrover.space/arc-25-missions).
 
 **Main components:**
 
 - Arm Simulation (Gazebo) [under development]
 - Arm Teleoperation [under development]
-- Arm control (Movit!2 + ros2control)
+- Arm control (MATLAB + ros2control)
 
 <center> <img src="assets/rover_gazebo_depth.gif" alt="Scarab Rover Simulation in Gazebo"> </center>
 
@@ -14,7 +14,8 @@ ROS2 Moveit!, ROS2 Control, and hardware firmware settings for [Anatolian Rover 
 - ROS2 (Humble or later recommended)
 - Ubuntu 22.04 Jammy Jellyfish
 - Gazebo Ignition
-- Moveit!2 humble
+- MATLAB 2023b
+- MATLAB 2023b Toolbox (robotic system toolbox, ROS toolbox, control system toolbox)
 - ROS2 control
 - ROS2 Package for ODrive
 
@@ -22,7 +23,7 @@ ROS2 Moveit!, ROS2 Control, and hardware firmware settings for [Anatolian Rover 
 
 1. Install dependencies:
    
-  Please follow this page for Moveit!2: https://moveit.picknik.ai/humble/doc/tutorials/getting_started/getting_started.html
+  Please install MATLAB 2023b and ROS2
 
 3. Make a folder and clone the repository:
    ```bash
@@ -34,6 +35,10 @@ ROS2 Moveit!, ROS2 Control, and hardware firmware settings for [Anatolian Rover 
    git clone https://github.com/odriverobotics/ros_odrive.git
    cd ..
    ```
+
+   Make sure to checkout to matlab branch!!!!
+
+   And open Scarabarm/scarab_matlab/ folder and add all subfolder in the path in MATLAB
 
 3. Build the workspace:
    ```bash
