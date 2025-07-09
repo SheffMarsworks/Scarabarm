@@ -1,0 +1,36 @@
+[0.249s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/full_scrab_arm -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm
+[0.384s] -- The C compiler identification is GNU 11.4.0
+[0.852s] -- The CXX compiler identification is GNU 11.4.0
+[1.162s] -- Detecting C compiler ABI info
+[1.372s] -- Detecting C compiler ABI info - done
+[1.378s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.378s] -- Detecting C compile features
+[1.378s] -- Detecting C compile features - done
+[1.381s] -- Detecting CXX compiler ABI info
+[1.563s] -- Detecting CXX compiler ABI info - done
+[1.571s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.571s] -- Detecting CXX compile features
+[1.572s] -- Detecting CXX compile features - done
+[1.574s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.711s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.766s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.793s] -- Found xacro: 2.0.13 (/opt/ros/humble/share/xacro/cmake)
+[1.851s] -- Configuring done
+[1.855s] -- Generating done
+[1.857s] -- Build files have been written to: /home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm
+[1.860s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm' returned '0': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/full_scrab_arm -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm
+[1.863s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm -- -j8 -l8
+[1.893s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm' returned '0': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm -- -j8 -l8
+[1.902s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm
+[1.906s] -- Install configuration: ""
+[1.907s] -- Execute custom install script
+[1.908s] -- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/urdf/full_scrab_arm.xacro
+[1.916s] [31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+[1.916s]   ament_cmake_symlink_install_directory() can't find
+[1.916s]   '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/full_scrab_arm/launch'
+[1.916s] Call Stack (most recent call first):
+[1.916s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[1.916s]   cmake_install.cmake:46 (include)
+[1.916s] 
+[1.916s] [0m
+[1.918s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm' returned '1': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm

@@ -1,0 +1,1 @@
+rclcpp;xacro;robot_state_publisher;joint_state_publisher;ros_gz_sim;ros_gz_bridge;controller_manager;joint_trajectory_controller;joint_state_broadcaster;fake_components;moveit_ros_move_group;rviz2;ament_lint_auto;ament_lint_common

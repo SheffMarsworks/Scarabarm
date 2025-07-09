@@ -1,0 +1,46 @@
+running develop
+Removing /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages/Arm-description.egg-link (link to .)
+running egg_info
+writing ../../../build/Arm_description/Arm_description.egg-info/PKG-INFO
+writing dependency_links to ../../../build/Arm_description/Arm_description.egg-info/dependency_links.txt
+writing entry points to ../../../build/Arm_description/Arm_description.egg-info/entry_points.txt
+writing requirements to ../../../build/Arm_description/Arm_description.egg-info/requires.txt
+writing top-level names to ../../../build/Arm_description/Arm_description.egg-info/top_level.txt
+reading manifest file '../../../build/Arm_description/Arm_description.egg-info/SOURCES.txt'
+writing manifest file '../../../build/Arm_description/Arm_description.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build
+creating /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build/lib
+creating /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build/lib/Arm_description
+copying Arm_description/__init__.py -> /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build/lib/Arm_description
+running install
+running install_lib
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages/Arm_description
+copying /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build/lib/Arm_description/__init__.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages/Arm_description
+byte-compiling /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages/Arm_description/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/Arm_description -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/ament_index/resource_index/packages
+copying package.xml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description
+copying launch/gazebo.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/launch
+copying launch/display.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/launch
+copying urdf/Arm.ros2control -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+copying urdf/materials.xacro -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+copying urdf/Arm.gazebo -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+copying urdf/Arm.xacro -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+copying meshes/joint_5_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+copying meshes/joint_1_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+copying meshes/joint_4_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+copying meshes/link_2_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+copying meshes/joint_2_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+copying meshes/base_link.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+copying meshes/joint_3_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+copying meshes/link_3_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+copying meshes/joint_6_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+copying config/gazebo.rviz -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config
+copying config/ros_gz_bridge_gazebo.yaml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config
+copying config/display.rviz -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config
+running install_egg_info
+Copying ../../../build/Arm_description/Arm_description.egg-info to /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages/Arm_description-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/install.log'

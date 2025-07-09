@@ -1,0 +1,1 @@
+/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_botwheel_explorer/ament_cmake_core/odrive_botwheel_explorerConfig-version.cmake

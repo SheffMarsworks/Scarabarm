@@ -1,0 +1,4 @@
+[console_scripts]
+scarab_controller = scarabarm_control.scarabarm_controller_node:main
+scarab_js_agg = scarabarm_control.joint_state_aggregator:main
+

@@ -1,0 +1,16 @@
+[1.529s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/build --no-deps symlink_data
+[1.784s] running develop
+[1.927s] running egg_info
+[1.927s] writing gripper_sim_description.egg-info/PKG-INFO
+[1.927s] writing dependency_links to gripper_sim_description.egg-info/dependency_links.txt
+[1.928s] writing entry points to gripper_sim_description.egg-info/entry_points.txt
+[1.928s] writing requirements to gripper_sim_description.egg-info/requires.txt
+[1.928s] writing top-level names to gripper_sim_description.egg-info/top_level.txt
+[1.931s] reading manifest file 'gripper_sim_description.egg-info/SOURCES.txt'
+[1.932s] writing manifest file 'gripper_sim_description.egg-info/SOURCES.txt'
+[1.935s] running build_ext
+[1.935s] Creating /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages/gripper-sim-description.egg-link (link to .)
+[1.936s] 
+[1.936s] Installed /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description
+[1.936s] running symlink_data
+[1.982s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description' returned '0': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/build --no-deps symlink_data

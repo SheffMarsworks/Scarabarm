@@ -1,0 +1,26 @@
+-- Install configuration: ""
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/moveit_sim.launch.py
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/spawn_controllers.launch.py
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/gazebo_sim.launch.py
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/ controllers_sim.yaml
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.urdf.xacro
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.ros2_control.xacro
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/ros2_control_sim.yaml
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.srdf
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/ament_index/resource_index/package_run_dependencies/scarabarm_sim
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/ament_index/resource_index/parent_prefix_path/scarabarm_sim
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/ament_prefix_path.sh
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/path.sh
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/path.dsv
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.bash
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.sh
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.zsh
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.dsv
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.dsv
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/ament_index/resource_index/packages/scarabarm_sim
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/cmake/scarabarm_simConfig.cmake
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/cmake/scarabarm_simConfig-version.cmake
+-- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.xml

@@ -1,0 +1,1 @@
+/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_moveit/ament_cmake_environment_hooks/local_setup.bash

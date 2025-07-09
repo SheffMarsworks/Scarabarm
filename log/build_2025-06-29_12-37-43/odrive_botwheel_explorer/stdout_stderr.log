@@ -1,0 +1,22 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/urdf/diffbot.ros2_control.xacro
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/urdf/diffbot.urdf.xacro
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/urdf/diffbot_description.urdf.xacro
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/config/diffbot_controllers.yaml
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/launch/botwheel_explorer.launch.py
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/ament_index/resource_index/package_run_dependencies/odrive_botwheel_explorer
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/ament_index/resource_index/parent_prefix_path/odrive_botwheel_explorer
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/environment/path.sh
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/environment/path.dsv
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/local_setup.bash
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/local_setup.sh
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/local_setup.zsh
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/local_setup.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.dsv
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/ament_index/resource_index/packages/odrive_botwheel_explorer
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/cmake/odrive_botwheel_explorerConfig.cmake
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/cmake/odrive_botwheel_explorerConfig-version.cmake
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.xml

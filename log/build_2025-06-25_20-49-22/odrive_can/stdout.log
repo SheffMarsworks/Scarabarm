@@ -1,0 +1,251 @@
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  3%] Built target ament_cmake_python_symlink_odrive_can
+running egg_info
+creating odrive_can.egg-info
+writing odrive_can.egg-info/PKG-INFO
+writing dependency_links to odrive_can.egg-info/dependency_links.txt
+writing top-level names to odrive_can.egg-info/top_level.txt
+writing manifest file 'odrive_can.egg-info/SOURCES.txt'
+reading manifest file 'odrive_can.egg-info/SOURCES.txt'
+writing manifest file 'odrive_can.egg-info/SOURCES.txt'
+[  3%] Built target ament_cmake_python_build_odrive_can_egg
+[  3%] Built target odrive_can__cpp
+[  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 10%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_c.dir/rosidl_generator_c/odrive_can/msg/detail/control_message__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_c.dir/rosidl_generator_c/odrive_can/msg/detail/controller_status__functions.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_c.dir/rosidl_generator_c/odrive_can/msg/detail/o_drive_status__functions.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_c.dir/rosidl_generator_c/odrive_can/srv/detail/axis_state__functions.c.o[0m
+[ 16%] [32m[1mLinking C shared library libodrive_can__rosidl_generator_c.so[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/odrive_can/msg/controller_status__type_support.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/odrive_can/msg/control_message__type_support.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/odrive_can/msg/o_drive_status__type_support.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/odrive_can/srv/axis_state__type_support.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/odrive_can/msg/detail/control_message__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/odrive_can/msg/detail/controller_status__type_support.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/odrive_can/msg/detail/dds_fastrtps/control_message__type_support.cpp.o[0m
+[ 30%] Built target odrive_can__rosidl_generator_c
+[ 30%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/odrive_can/msg/detail/o_drive_status__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/odrive_can/srv/detail/axis_state__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/odrive_can/msg/detail/dds_fastrtps/controller_status__type_support.cpp.o[0m
+[ 35%] [32m[1mLinking CXX shared library libodrive_can__rosidl_typesupport_cpp.so[0m
+[ 36%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/odrive_can/msg/detail/dds_fastrtps/o_drive_status__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/odrive_can/srv/detail/dds_fastrtps/axis_state__type_support.cpp.o[0m
+[ 41%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 43%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 45%] [32m[1mLinking CXX shared library libodrive_can__rosidl_typesupport_introspection_cpp.so[0m
+[ 45%] Built target odrive_can__rosidl_typesupport_cpp
+[ 46%] [32m[1mLinking CXX shared library libodrive_can__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/odrive_can/msg/detail/control_message__type_support_c.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/odrive_can_node.dir/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/odrive_can/msg/detail/controller_status__type_support_c.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/odrive_can/msg/detail/o_drive_status__type_support_c.cpp.o[0m
+[ 53%] Built target odrive_can__rosidl_typesupport_introspection_cpp
+[ 55%] [32mBuilding CXX object CMakeFiles/odrive_can_node.dir/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_base/src/socket_can.cpp.o[0m
+[ 56%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/odrive_can/msg/detail/control_message__type_support.c.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_c.dir/rosidl_typesupport_c/odrive_can/msg/control_message__type_support.cpp.o[0m
+[ 60%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/odrive_can/msg/detail/controller_status__type_support.c.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_c.dir/rosidl_typesupport_c/odrive_can/msg/controller_status__type_support.cpp.o[0m
+[ 63%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/odrive_can/msg/detail/o_drive_status__type_support.c.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_c.dir/rosidl_typesupport_c/odrive_can/msg/o_drive_status__type_support.cpp.o[0m
+[ 66%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/odrive_can/srv/detail/axis_state__type_support.c.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_c.dir/rosidl_typesupport_c/odrive_can/srv/axis_state__type_support.cpp.o[0m
+[ 70%] [32m[1mLinking C shared library libodrive_can__rosidl_typesupport_introspection_c.so[0m
+[ 71%] [32m[1mLinking CXX shared library libodrive_can__rosidl_typesupport_c.so[0m
+[ 71%] Built target odrive_can__rosidl_typesupport_fastrtps_cpp
+[ 73%] [32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/odrive_can/srv/detail/axis_state__type_support_c.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/odrive_can_node.dir/src/main.cpp.o[0m
+[ 76%] Built target odrive_can__rosidl_typesupport_introspection_c
+[ 76%] Built target odrive_can__rosidl_typesupport_c
+[ 78%] [32m[1mLinking CXX shared library libodrive_can__rosidl_typesupport_fastrtps_c.so[0m
+[ 78%] Built target odrive_can__rosidl_typesupport_fastrtps_c
+[ 78%] Built target odrive_can
+[ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 80%] Built target odrive_can__py
+[ 81%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_py.dir/rosidl_generator_py/odrive_can/msg/_control_message_s.c.o[0m
+[ 83%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_py.dir/rosidl_generator_py/odrive_can/msg/_controller_status_s.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_py.dir/rosidl_generator_py/odrive_can/msg/_o_drive_status_s.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_py.dir/rosidl_generator_py/odrive_can/srv/_axis_state_s.c.o[0m
+[ 88%] [32m[1mLinking C shared library rosidl_generator_py/odrive_can/libodrive_can__rosidl_generator_py.so[0m
+[ 88%] Built target odrive_can__rosidl_generator_py
+[ 91%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/odrive_can/_odrive_can_s.ep.rosidl_typesupport_c.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/odrive_can/_odrive_can_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/odrive_can/_odrive_can_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 95%] [32m[1mLinking C shared library rosidl_generator_py/odrive_can/odrive_can_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 96%] [32m[1mLinking C shared library rosidl_generator_py/odrive_can/odrive_can_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 98%] [32m[1mLinking C shared library rosidl_generator_py/odrive_can/odrive_can_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 98%] Built target odrive_can__rosidl_typesupport_c__pyext
+[ 98%] Built target odrive_can__rosidl_typesupport_fastrtps_c__pyext
+[ 98%] Built target odrive_can__rosidl_typesupport_introspection_c__pyext
+[100%] [32m[1mLinking CXX executable odrive_can_node[0m
+[100%] Built target odrive_can_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/ament_index/resource_index/rosidl_interfaces/odrive_can
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/control_message.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/controller_status.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__functions.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__struct.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__type_support.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__functions.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__struct.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__type_support.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__functions.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__struct.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__type_support.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/o_drive_status.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/srv/axis_state.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__functions.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__struct.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__type_support.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/environment/library_path.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/environment/library_path.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/control_message.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/controller_status.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__builder.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__struct.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__traits.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__type_support.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__builder.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__struct.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__traits.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__type_support.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__builder.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__struct.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__traits.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__type_support.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/o_drive_status.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/srv/axis_state.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__builder.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__struct.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__traits.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__type_support.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/environment/pythonpath.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/environment/pythonpath.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/PKG-INFO
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/SOURCES.txt
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/dependency_links.txt
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/top_level.txt
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/__init__.py
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/_odrive_can_s.ep.rosidl_typesupport_c.c
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/_odrive_can_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/_odrive_can_s.ep.rosidl_typesupport_introspection_c.c
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/libodrive_can__rosidl_generator_py.so
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/__init__.py
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_control_message.py
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_control_message_s.c
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_controller_status.py
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_controller_status_s.c
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_o_drive_status.py
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_o_drive_status_s.c
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/__init__.py
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/_axis_state.py
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/_axis_state_s.c
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/msg/ControlMessage.idl
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/msg/ControllerStatus.idl
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/msg/ODriveStatus.idl
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/srv/AxisState.idl
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/msg/ControlMessage.msg
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/msg/ControllerStatus.msg
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/msg/ODriveStatus.msg
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/srv/AxisState.srv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/srv/AxisState_Request.msg
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/srv/AxisState_Response.msg
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/odrive_can/odrive_can_node
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/launch/example_launch.yaml
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/ament_index/resource_index/package_run_dependencies/odrive_can
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/ament_index/resource_index/parent_prefix_path/odrive_can
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/environment/ament_prefix_path.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/environment/ament_prefix_path.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/environment/path.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/environment/path.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/local_setup.bash
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/local_setup.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/local_setup.zsh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/local_setup.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/package.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/ament_index/resource_index/packages/odrive_can
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/odrive_canConfig.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/odrive_canConfig-version.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/package.xml
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_generator_c.so
+-- Set runtime path of "/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_generator_c.so" to ""
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_typesupport_c.so
+-- Set runtime path of "/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_typesupport_c.so" to ""
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_typesupport_cpp.so" to ""
+Listing '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can'...
+Compiling '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/__init__.py'...
+Listing '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg'...
+Compiling '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/__init__.py'...
+Compiling '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_control_message.py'...
+Compiling '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_controller_status.py'...
+Compiling '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_o_drive_status.py'...
+Listing '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv'...
+Compiling '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/__init__.py'...
+Compiling '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/_axis_state.py'...
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_generator_py.so
+-- Set runtime path of "/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/libodrive_can__rosidl_generator_py.so" to ""
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_cExport.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_cppExport.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cExport.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_pyExport.cmake
+-- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_pyExport-noconfig.cmake

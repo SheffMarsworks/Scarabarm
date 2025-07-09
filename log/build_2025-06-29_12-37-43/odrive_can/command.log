@@ -1,0 +1,4 @@
+Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can -- -j8 -l8
+Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can -- -j8 -l8
+Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can
+Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can

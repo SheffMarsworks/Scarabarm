@@ -1,0 +1,9 @@
+{
+  "package_name": "odrive_can",
+  "non_idl_tuples": [
+    "/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_node:msg/ControlMessage.msg",
+    "/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_node:msg/ControllerStatus.msg",
+    "/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_node:msg/ODriveStatus.msg",
+    "/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_node:srv/AxisState.srv"
+  ]
+}

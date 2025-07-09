@@ -1,0 +1,6 @@
+source;share/scarabarm_odrive/hook/pythonpath.ps1
+source;share/scarabarm_odrive/hook/pythonpath.dsv
+source;share/scarabarm_odrive/hook/pythonpath.sh
+source;share/scarabarm_odrive/hook/ament_prefix_path.ps1
+source;share/scarabarm_odrive/hook/ament_prefix_path.dsv
+source;share/scarabarm_odrive/hook/ament_prefix_path.sh

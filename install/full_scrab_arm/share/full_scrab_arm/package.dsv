@@ -1,0 +1,8 @@
+source;share/full_scrab_arm/hook/cmake_prefix_path.ps1
+source;share/full_scrab_arm/hook/cmake_prefix_path.dsv
+source;share/full_scrab_arm/hook/cmake_prefix_path.sh
+source;share/full_scrab_arm/local_setup.bash
+source;share/full_scrab_arm/local_setup.dsv
+source;share/full_scrab_arm/local_setup.ps1
+source;share/full_scrab_arm/local_setup.sh
+source;share/full_scrab_arm/local_setup.zsh

@@ -1,0 +1,1 @@
+/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_moveit/launch/warehouse_db.launch.py

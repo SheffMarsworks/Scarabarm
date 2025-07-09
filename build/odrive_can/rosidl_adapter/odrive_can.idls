@@ -1,0 +1,4 @@
+/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_adapter/odrive_can:msg/ControlMessage.idl
+/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_adapter/odrive_can:msg/ControllerStatus.idl
+/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_adapter/odrive_can:msg/ODriveStatus.idl
+/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_adapter/odrive_can:srv/AxisState.idl

@@ -1,0 +1,18 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/urdf/full_scrab_arm.xacro
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/ament_index/resource_index/package_run_dependencies/full_scrab_arm
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/ament_index/resource_index/parent_prefix_path/full_scrab_arm
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/environment/ament_prefix_path.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/environment/ament_prefix_path.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/environment/path.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/environment/path.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/local_setup.bash
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/local_setup.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/local_setup.zsh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/local_setup.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/ament_index/resource_index/packages/full_scrab_arm
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/cmake/full_scrab_armConfig.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/cmake/full_scrab_armConfig-version.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.xml

@@ -1,0 +1,17 @@
+[0.713s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can LD_LIBRARY_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/build --no-deps symlink_data
+[0.955s] running develop
+[1.090s] running egg_info
+[1.091s] writing scarabarm_odrive.egg-info/PKG-INFO
+[1.091s] writing dependency_links to scarabarm_odrive.egg-info/dependency_links.txt
+[1.091s] writing entry points to scarabarm_odrive.egg-info/entry_points.txt
+[1.091s] writing requirements to scarabarm_odrive.egg-info/requires.txt
+[1.091s] writing top-level names to scarabarm_odrive.egg-info/top_level.txt
+[1.093s] reading manifest file 'scarabarm_odrive.egg-info/SOURCES.txt'
+[1.094s] writing manifest file 'scarabarm_odrive.egg-info/SOURCES.txt'
+[1.095s] running build_ext
+[1.095s] Creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages/scarabarm-odrive.egg-link (link to .)
+[1.096s] Installing odrive_trajectory_executor script to /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/scarabarm_odrive
+[1.096s] 
+[1.096s] Installed /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive
+[1.096s] running symlink_data
+[1.118s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive' returned '0': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can LD_LIBRARY_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/build --no-deps symlink_data

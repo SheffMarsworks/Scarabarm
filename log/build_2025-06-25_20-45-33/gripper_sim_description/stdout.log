@@ -1,0 +1,41 @@
+running develop
+running egg_info
+creating gripper_sim_description.egg-info
+writing gripper_sim_description.egg-info/PKG-INFO
+writing dependency_links to gripper_sim_description.egg-info/dependency_links.txt
+writing entry points to gripper_sim_description.egg-info/entry_points.txt
+writing requirements to gripper_sim_description.egg-info/requires.txt
+writing top-level names to gripper_sim_description.egg-info/top_level.txt
+writing manifest file 'gripper_sim_description.egg-info/SOURCES.txt'
+reading manifest file 'gripper_sim_description.egg-info/SOURCES.txt'
+writing manifest file 'gripper_sim_description.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages/gripper-sim-description.egg-link (link to .)
+
+Installed /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description
+running symlink_data
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/ament_index
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/ament_index/resource_index
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/ament_index/resource_index/packages
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/resource/gripper_sim_description -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/ament_index/resource_index/packages
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/package.xml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/launch
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/launch/gazebo.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/launch
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/launch/display.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/launch
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/urdf
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/urdf/gripper_sim.gazebo -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/urdf
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/urdf/gripper_sim.xacro -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/urdf
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/urdf/materials.xacro -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/urdf
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/urdf/gripper_sim.ros2control -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/urdf
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/meshes/inner_link_x_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/meshes/finger_x_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/meshes/inner_link_y_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/meshes/finger_y_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/meshes/outer_link_x_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/meshes/outer_link_y_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/meshes/gripper_base_link.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/config
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/config/gazebo.rviz -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/config
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/config/ros_gz_bridge_gazebo.yaml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/config
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/config/display.rviz -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/config

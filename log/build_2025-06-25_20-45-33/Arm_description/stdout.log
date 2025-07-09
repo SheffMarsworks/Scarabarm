@@ -1,0 +1,43 @@
+running develop
+running egg_info
+creating Arm_description.egg-info
+writing Arm_description.egg-info/PKG-INFO
+writing dependency_links to Arm_description.egg-info/dependency_links.txt
+writing entry points to Arm_description.egg-info/entry_points.txt
+writing requirements to Arm_description.egg-info/requires.txt
+writing top-level names to Arm_description.egg-info/top_level.txt
+writing manifest file 'Arm_description.egg-info/SOURCES.txt'
+reading manifest file 'Arm_description.egg-info/SOURCES.txt'
+writing manifest file 'Arm_description.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages/Arm-description.egg-link (link to .)
+
+Installed /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description
+running symlink_data
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/ament_index
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/ament_index/resource_index
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/ament_index/resource_index/packages
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/resource/Arm_description -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/ament_index/resource_index/packages
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/package.xml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/launch
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/launch/gazebo.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/launch
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/launch/display.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/launch
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/urdf/Arm.ros2control -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/urdf/materials.xacro -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/urdf/Arm.gazebo -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/urdf/Arm.xacro -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/joint_5_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/joint_1_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/joint_4_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/link_2_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/joint_2_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/base_link.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/joint_3_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/link_3_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/joint_6_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/config/gazebo.rviz -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/config/ros_gz_bridge_gazebo.yaml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/config/display.rviz -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config

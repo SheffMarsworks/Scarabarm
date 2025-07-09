@@ -1,0 +1,79 @@
+[0.663s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake /home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_sim -DCMAKE_INSTALL_PREFIX=/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim
+[1.032s] -- The C compiler identification is GNU 11.4.0
+[1.689s] -- The CXX compiler identification is GNU 11.4.0
+[2.067s] -- Detecting C compiler ABI info
+[2.202s] -- Detecting C compiler ABI info - done
+[2.208s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.209s] -- Detecting C compile features
+[2.209s] -- Detecting C compile features - done
+[2.212s] -- Detecting CXX compiler ABI info
+[2.365s] -- Detecting CXX compiler ABI info - done
+[2.371s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.371s] -- Detecting CXX compile features
+[2.371s] -- Detecting CXX compile features - done
+[2.377s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.514s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.610s] -- Found xacro: 2.0.13 (/opt/ros/humble/share/xacro/cmake)
+[2.613s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[2.783s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.790s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.799s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.812s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.827s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.869s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.872s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.023s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.162s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.340s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.353s] -- Looking for pthread.h
+[7.507s] -- Looking for pthread.h - found
+[7.508s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.637s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[7.637s] -- Found Threads: TRUE  
+[7.680s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[7.744s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[7.744s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[7.745s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[9.093s] -- Found ros_gz_sim: 0.244.20 (/opt/ros/humble/share/ros_gz_sim/cmake)
+[9.097s] -- Found ros_gz_bridge: 0.244.20 (/opt/ros/humble/share/ros_gz_bridge/cmake)
+[10.474s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[11.590s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[12.906s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[12.969s] -- Added test 'flake8' to check Python code syntax and style conventions
+[12.970s] -- Added test 'lint_cmake' to check CMake code style
+[12.970s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[12.971s] -- Added test 'xmllint' to check XML markup files
+[12.972s] -- Configuring done
+[12.977s] -- Generating done
+[12.980s] -- Build files have been written to: /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim
+[12.989s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake /home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_sim -DCMAKE_INSTALL_PREFIX=/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim
+[12.990s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim -- -j8 -l8
+[13.019s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim -- -j8 -l8
+[13.021s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim
+[13.026s] -- Install configuration: ""
+[13.026s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch
+[13.026s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/moveit_sim.launch.py
+[13.027s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/spawn_controllers.launch.py
+[13.028s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/gazebo_sim.launch.py
+[13.028s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config
+[13.028s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/ controllers_sim.yaml
+[13.028s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.urdf.xacro
+[13.029s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.ros2_control.xacro
+[13.030s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/ros2_control_sim.yaml
+[13.030s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.srdf
+[13.032s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/ament_index/resource_index/package_run_dependencies/scarabarm_sim
+[13.032s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/ament_index/resource_index/parent_prefix_path/scarabarm_sim
+[13.032s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/ament_prefix_path.sh
+[13.033s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/ament_prefix_path.dsv
+[13.033s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/path.sh
+[13.033s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/path.dsv
+[13.033s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.bash
+[13.033s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.sh
+[13.033s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.zsh
+[13.033s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.dsv
+[13.034s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.dsv
+[13.034s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/ament_index/resource_index/packages/scarabarm_sim
+[13.034s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/cmake/scarabarm_simConfig.cmake
+[13.034s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/cmake/scarabarm_simConfig-version.cmake
+[13.034s] -- Installing: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.xml
+[13.036s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim

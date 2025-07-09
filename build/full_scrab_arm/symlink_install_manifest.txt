@@ -1,0 +1,17 @@
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/urdf/full_scrab_arm.xacro
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/launch/gazebo.launch.py
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/ament_index/resource_index/package_run_dependencies/full_scrab_arm
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/ament_index/resource_index/parent_prefix_path/full_scrab_arm
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/environment/ament_prefix_path.sh
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/environment/ament_prefix_path.dsv
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/environment/path.sh
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/environment/path.dsv
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/local_setup.bash
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/local_setup.sh
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/local_setup.zsh
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/local_setup.dsv
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.dsv
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/ament_index/resource_index/packages/full_scrab_arm
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/cmake/full_scrab_armConfig.cmake
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/cmake/full_scrab_armConfig-version.cmake
+/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.xml

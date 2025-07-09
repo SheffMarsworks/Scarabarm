@@ -1,0 +1,26 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/odrive_ros2_control_plugin.dir/src/odrive_hardware_interface.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/odrive_ros2_control_plugin.dir/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_base/src/socket_can.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/odrive_ros2_control_plugin.dir/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libodrive_ros2_control_plugin.so[0m
+[100%] Built target odrive_ros2_control_plugin
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control//odrive_hardware_interface.xml
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib/libodrive_ros2_control_plugin.so
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/ament_index/resource_index/package_run_dependencies/odrive_ros2_control
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/ament_index/resource_index/parent_prefix_path/odrive_ros2_control
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.bash
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.zsh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/ament_index/resource_index/packages/odrive_ros2_control
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/odrive_ros2_control
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig-version.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.xml

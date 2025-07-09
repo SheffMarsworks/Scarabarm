@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "odrive_can__py",
+		"source" : "/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/odrive_can__py"
+	}
+}

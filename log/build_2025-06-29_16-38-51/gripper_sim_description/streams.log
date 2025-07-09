@@ -1,0 +1,48 @@
+[1.259s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/build
+[1.584s] running develop
+[1.804s] Removing /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages/gripper-sim-description.egg-link (link to .)
+[1.855s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description' returned '0': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/build
+[1.858s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/ee/gripper_sim_description': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/gripper_sim_description build --build-base /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/build install --record /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/install.log --single-version-externally-managed install_data --force
+[2.169s] running egg_info
+[2.169s] writing ../../../build/gripper_sim_description/gripper_sim_description.egg-info/PKG-INFO
+[2.170s] writing dependency_links to ../../../build/gripper_sim_description/gripper_sim_description.egg-info/dependency_links.txt
+[2.170s] writing entry points to ../../../build/gripper_sim_description/gripper_sim_description.egg-info/entry_points.txt
+[2.170s] writing requirements to ../../../build/gripper_sim_description/gripper_sim_description.egg-info/requires.txt
+[2.170s] writing top-level names to ../../../build/gripper_sim_description/gripper_sim_description.egg-info/top_level.txt
+[2.173s] reading manifest file '../../../build/gripper_sim_description/gripper_sim_description.egg-info/SOURCES.txt'
+[2.174s] writing manifest file '../../../build/gripper_sim_description/gripper_sim_description.egg-info/SOURCES.txt'
+[2.174s] running build
+[2.174s] running build_py
+[2.175s] creating /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/build
+[2.175s] creating /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/build/lib
+[2.175s] creating /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/build/lib/gripper_sim_description
+[2.175s] copying gripper_sim_description/__init__.py -> /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/build/lib/gripper_sim_description
+[2.176s] running install
+[2.177s] running install_lib
+[2.178s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages/gripper_sim_description
+[2.178s] copying /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/build/lib/gripper_sim_description/__init__.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages/gripper_sim_description
+[2.179s] byte-compiling /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages/gripper_sim_description/__init__.py to __init__.cpython-310.pyc
+[2.180s] running install_data
+[2.180s] copying resource/gripper_sim_description -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/ament_index/resource_index/packages
+[2.180s] copying package.xml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description
+[2.180s] copying launch/gazebo.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/launch
+[2.181s] copying launch/display.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/launch
+[2.181s] copying urdf/gripper_sim.gazebo -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/urdf
+[2.182s] copying urdf/gripper_sim.xacro -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/urdf
+[2.183s] copying urdf/materials.xacro -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/urdf
+[2.183s] copying urdf/gripper_sim.ros2control -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/urdf
+[2.183s] copying meshes/inner_link_x_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+[2.185s] copying meshes/finger_x_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+[2.185s] copying meshes/inner_link_y_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+[2.187s] copying meshes/finger_y_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+[2.188s] copying meshes/outer_link_x_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+[2.189s] copying meshes/outer_link_y_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+[2.190s] copying meshes/gripper_base_link.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/meshes
+[2.192s] copying config/gazebo.rviz -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/config
+[2.192s] copying config/ros_gz_bridge_gazebo.yaml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/config
+[2.193s] copying config/display.rviz -> /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/config
+[2.194s] running install_egg_info
+[2.196s] Copying ../../../build/gripper_sim_description/gripper_sim_description.egg-info to /home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages/gripper_sim_description-0.0.0-py3.10.egg-info
+[2.198s] running install_scripts
+[2.217s] writing list of installed files to '/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/install.log'
+[2.248s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/ee/gripper_sim_description' returned '0': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/gripper_sim_description build --build-base /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/build install --record /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/install.log --single-version-externally-managed install_data --force

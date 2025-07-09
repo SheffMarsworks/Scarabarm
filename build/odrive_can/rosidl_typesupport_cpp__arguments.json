@@ -1,0 +1,23 @@
+{
+  "package_name": "odrive_can",
+  "output_dir": "/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_typesupport_cpp/odrive_can",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_cpp/resource",
+  "idl_tuples": [
+    "/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_adapter/odrive_can:msg/ControlMessage.idl",
+    "/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_adapter/odrive_can:msg/ControllerStatus.idl",
+    "/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_adapter/odrive_can:msg/ODriveStatus.idl",
+    "/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_adapter/odrive_can:srv/AxisState.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/action__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
+    "/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_adapter/odrive_can/msg/ControlMessage.idl",
+    "/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_adapter/odrive_can/msg/ControllerStatus.idl",
+    "/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_adapter/odrive_can/msg/ODriveStatus.idl",
+    "/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_adapter/odrive_can/srv/AxisState.idl"
+  ]
+}

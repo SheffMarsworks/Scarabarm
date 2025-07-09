@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_ros2_control/libodrive_ros2_control_plugin.so" "TARGETS" "odrive_ros2_control_plugin" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

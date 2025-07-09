@@ -1,0 +1,45 @@
+[1.389s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build --no-deps symlink_data
+[1.721s] running develop
+[1.885s] running egg_info
+[1.886s] creating Arm_description.egg-info
+[1.886s] writing Arm_description.egg-info/PKG-INFO
+[1.886s] writing dependency_links to Arm_description.egg-info/dependency_links.txt
+[1.886s] writing entry points to Arm_description.egg-info/entry_points.txt
+[1.887s] writing requirements to Arm_description.egg-info/requires.txt
+[1.887s] writing top-level names to Arm_description.egg-info/top_level.txt
+[1.887s] writing manifest file 'Arm_description.egg-info/SOURCES.txt'
+[1.889s] reading manifest file 'Arm_description.egg-info/SOURCES.txt'
+[1.889s] writing manifest file 'Arm_description.egg-info/SOURCES.txt'
+[1.891s] running build_ext
+[1.891s] Creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages/Arm-description.egg-link (link to .)
+[1.892s] 
+[1.892s] Installed /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description
+[1.892s] running symlink_data
+[1.892s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/ament_index
+[1.893s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/ament_index/resource_index
+[1.893s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/ament_index/resource_index/packages
+[1.893s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/resource/Arm_description -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/ament_index/resource_index/packages
+[1.894s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/package.xml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description
+[1.895s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/launch
+[1.895s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/launch/gazebo.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/launch
+[1.895s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/launch/display.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/launch
+[1.895s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+[1.896s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/urdf/Arm.ros2control -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+[1.896s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/urdf/materials.xacro -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+[1.896s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/urdf/Arm.gazebo -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+[1.896s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/urdf/Arm.xacro -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+[1.896s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[1.896s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/joint_5_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[1.896s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/joint_1_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[1.897s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/joint_4_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[1.897s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/link_2_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[1.897s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/joint_2_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[1.897s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/base_link.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[1.898s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/joint_3_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[1.898s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/link_3_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[1.898s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/meshes/joint_6_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[1.899s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config
+[1.899s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/config/gazebo.rviz -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config
+[1.900s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/config/ros_gz_bridge_gazebo.yaml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config
+[1.901s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/config/display.rviz -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config
+[1.937s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description' returned '0': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build --no-deps symlink_data

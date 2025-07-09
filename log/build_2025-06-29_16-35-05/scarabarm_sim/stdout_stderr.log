@@ -1,0 +1,18 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/gazebo_sim.launch.py
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/moveit_sim.launch.py
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/spawn_controllers.launch.py
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/ controllers_sim.yaml
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.ros2_control.xacro
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.srdf
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.urdf.xacro
+-- Up-to-date symlink: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/ros2_control_sim.yaml
+[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+  ament_cmake_symlink_install_directory() can't find
+  '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_sim/urdf'
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:320 (ament_cmake_symlink_install_directory)
+  cmake_install.cmake:46 (include)
+
+[0m

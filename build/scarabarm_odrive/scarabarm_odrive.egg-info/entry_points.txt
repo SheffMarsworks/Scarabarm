@@ -1,0 +1,3 @@
+[console_scripts]
+odrive_trajectory_executor = scarabarm_odrive.odrive_trajectory_executor:main
+

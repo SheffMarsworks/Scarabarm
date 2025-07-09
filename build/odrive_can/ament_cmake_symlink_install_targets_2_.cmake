@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_generator_py/odrive_can/odrive_can_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "odrive_can__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/odrive_can")

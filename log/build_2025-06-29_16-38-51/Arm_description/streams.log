@@ -1,0 +1,50 @@
+[1.274s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build
+[1.599s] running develop
+[1.807s] Removing /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages/Arm-description.egg-link (link to .)
+[1.849s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description' returned '0': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build
+[1.853s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/arm/Arm_description': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/Arm_description build --build-base /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build install --record /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/install.log --single-version-externally-managed install_data --force
+[2.175s] running egg_info
+[2.175s] writing ../../../build/Arm_description/Arm_description.egg-info/PKG-INFO
+[2.176s] writing dependency_links to ../../../build/Arm_description/Arm_description.egg-info/dependency_links.txt
+[2.176s] writing entry points to ../../../build/Arm_description/Arm_description.egg-info/entry_points.txt
+[2.176s] writing requirements to ../../../build/Arm_description/Arm_description.egg-info/requires.txt
+[2.176s] writing top-level names to ../../../build/Arm_description/Arm_description.egg-info/top_level.txt
+[2.179s] reading manifest file '../../../build/Arm_description/Arm_description.egg-info/SOURCES.txt'
+[2.180s] writing manifest file '../../../build/Arm_description/Arm_description.egg-info/SOURCES.txt'
+[2.180s] running build
+[2.180s] running build_py
+[2.180s] creating /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build
+[2.181s] creating /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build/lib
+[2.181s] creating /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build/lib/Arm_description
+[2.181s] copying Arm_description/__init__.py -> /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build/lib/Arm_description
+[2.182s] running install
+[2.182s] running install_lib
+[2.183s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages/Arm_description
+[2.183s] copying /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build/lib/Arm_description/__init__.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages/Arm_description
+[2.184s] byte-compiling /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages/Arm_description/__init__.py to __init__.cpython-310.pyc
+[2.186s] running install_data
+[2.186s] copying resource/Arm_description -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/ament_index/resource_index/packages
+[2.186s] copying package.xml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description
+[2.186s] copying launch/gazebo.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/launch
+[2.186s] copying launch/display.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/launch
+[2.188s] copying urdf/Arm.ros2control -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+[2.189s] copying urdf/materials.xacro -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+[2.189s] copying urdf/Arm.gazebo -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+[2.190s] copying urdf/Arm.xacro -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/urdf
+[2.190s] copying meshes/joint_5_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[2.192s] copying meshes/joint_1_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[2.193s] copying meshes/joint_4_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[2.194s] copying meshes/link_2_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[2.195s] copying meshes/joint_2_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[2.196s] copying meshes/base_link.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[2.197s] copying meshes/joint_3_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[2.198s] copying meshes/link_3_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[2.199s] copying meshes/joint_6_1.stl -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/meshes
+[2.200s] copying config/gazebo.rviz -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config
+[2.201s] copying config/ros_gz_bridge_gazebo.yaml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config
+[2.202s] copying config/display.rviz -> /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/config
+[2.202s] running install_egg_info
+[2.204s] Copying ../../../build/Arm_description/Arm_description.egg-info to /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages/Arm_description-0.0.0-py3.10.egg-info
+[2.207s] running install_scripts
+[2.226s] writing list of installed files to '/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/install.log'
+[2.266s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/arm/Arm_description' returned '0': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/Arm_description build --build-base /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build install --record /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/install.log --single-version-externally-managed install_data --force

@@ -1,0 +1,23 @@
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/moveit_sim.launch.py
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/spawn_controllers.launch.py
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/gazebo_sim.launch.py
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/ controllers_sim.yaml
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.urdf.xacro
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.ros2_control.xacro
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/ros2_control_sim.yaml
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.srdf
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/ament_index/resource_index/package_run_dependencies/scarabarm_sim
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/ament_index/resource_index/parent_prefix_path/scarabarm_sim
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/ament_prefix_path.sh
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/ament_prefix_path.dsv
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/path.sh
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/path.dsv
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.bash
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.sh
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.zsh
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.dsv
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.dsv
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/ament_index/resource_index/packages/scarabarm_sim
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/cmake/scarabarm_simConfig.cmake
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/cmake/scarabarm_simConfig-version.cmake
+/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.xml

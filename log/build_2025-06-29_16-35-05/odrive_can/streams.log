@@ -1,0 +1,24 @@
+[0.397s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can -- -j8 -l8
+[0.650s] [  1%] Built target odrive_can__cpp
+[0.650s] [ 11%] Built target odrive_can__rosidl_generator_c
+[0.651s] [ 11%] Built target ament_cmake_python_symlink_odrive_can
+[0.651s] [ 21%] Built target odrive_can__rosidl_typesupport_c
+[0.651s] [ 36%] Built target odrive_can__rosidl_typesupport_cpp
+[0.651s] [ 50%] Built target odrive_can__rosidl_typesupport_fastrtps_cpp
+[0.651s] [ 51%] Built target odrive_can__rosidl_typesupport_introspection_cpp
+[0.652s] [ 61%] Built target odrive_can__rosidl_typesupport_fastrtps_c
+[0.653s] [ 71%] Built target odrive_can__rosidl_typesupport_introspection_c
+[0.653s] [ 71%] Built target odrive_can
+[0.653s] [ 80%] Built target odrive_can_node
+[0.656s] [ 81%] Built target odrive_can__py
+[0.689s] [ 90%] Built target odrive_can__rosidl_generator_py
+[0.711s] [ 93%] Built target odrive_can__rosidl_typesupport_c__pyext
+[0.722s] [ 96%] Built target odrive_can__rosidl_typesupport_fastrtps_c__pyext
+[0.723s] [100%] Built target odrive_can__rosidl_typesupport_introspection_c__pyext
+[0.882s] running egg_info
+[0.883s] writing odrive_can.egg-info/PKG-INFO
+[0.883s] writing dependency_links to odrive_can.egg-info/dependency_links.txt
+[0.883s] writing top-level names to odrive_can.egg-info/top_level.txt
+[0.888s] reading manifest file 'odrive_can.egg-info/SOURCES.txt'
+[0.889s] writing manifest file 'odrive_can.egg-info/SOURCES.txt'
+[0.913s] [100%] Built target ament_cmake_python_build_odrive_can_egg

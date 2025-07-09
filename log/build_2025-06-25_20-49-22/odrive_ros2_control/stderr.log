@@ -1,0 +1,17 @@
+In file included from [01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:3[m[K:
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Estop_msg_t::encode_buf(uint8_t*) const[m[K’:
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:117:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  117 |     void encode_buf([01;35m[Kuint8_t* buf[m[K) const {
+      |                     [01;35m[K~~~~~~~~~^~~[m[K
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Estop_msg_t::decode_buf(const uint8_t*)[m[K’:
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:120:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  120 |     void decode_buf([01;35m[Kconst uint8_t* buf[m[K) {
+      |                     [01;35m[K~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Enter_DFU_Mode_msg_t::encode_buf(uint8_t*) const[m[K’:
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:872:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  872 |     void encode_buf([01;35m[Kuint8_t* buf[m[K) const {
+      |                     [01;35m[K~~~~~~~~~^~~[m[K
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Enter_DFU_Mode_msg_t::decode_buf(const uint8_t*)[m[K’:
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:875:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  875 |     void decode_buf([01;35m[Kconst uint8_t* buf[m[K) {
+      |                     [01;35m[K~~~~~~~~~~~~~~~^~~[m[K

@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<robot name="gripper_sim" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+</robot>

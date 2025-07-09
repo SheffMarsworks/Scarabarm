@@ -1,0 +1,2 @@
+source;share/scarabarm_moveit/environment/ament_prefix_path.sh
+source;share/scarabarm_moveit/environment/path.sh

@@ -1,0 +1,34 @@
+running develop
+Removing /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages/scarabarm-odrive.egg-link (link to .)
+running egg_info
+writing ../build/scarabarm_odrive/scarabarm_odrive.egg-info/PKG-INFO
+writing dependency_links to ../build/scarabarm_odrive/scarabarm_odrive.egg-info/dependency_links.txt
+writing entry points to ../build/scarabarm_odrive/scarabarm_odrive.egg-info/entry_points.txt
+writing requirements to ../build/scarabarm_odrive/scarabarm_odrive.egg-info/requires.txt
+writing top-level names to ../build/scarabarm_odrive/scarabarm_odrive.egg-info/top_level.txt
+reading manifest file '../build/scarabarm_odrive/scarabarm_odrive.egg-info/SOURCES.txt'
+writing manifest file '../build/scarabarm_odrive/scarabarm_odrive.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/build
+creating /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/build/lib
+creating /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/build/lib/scarabarm_odrive
+copying scarabarm_odrive/odrive_trajectory_executor.py -> /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/build/lib/scarabarm_odrive
+copying scarabarm_odrive/__init__.py -> /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/build/lib/scarabarm_odrive
+running install
+running install_lib
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages/scarabarm_odrive
+copying /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/build/lib/scarabarm_odrive/odrive_trajectory_executor.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages/scarabarm_odrive
+copying /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/build/lib/scarabarm_odrive/__init__.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages/scarabarm_odrive
+byte-compiling /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages/scarabarm_odrive/odrive_trajectory_executor.py to odrive_trajectory_executor.cpython-310.pyc
+byte-compiling /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages/scarabarm_odrive/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/scarabarm_odrive -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/ament_index/resource_index/packages
+copying package.xml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive
+copying launch/odrive_hardware.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/launch
+copying launch/multi_odrive_launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/launch
+running install_egg_info
+Copying ../build/scarabarm_odrive/scarabarm_odrive.egg-info to /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages/scarabarm_odrive-0.0.0-py3.10.egg-info
+running install_scripts
+Installing odrive_trajectory_executor script to /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/scarabarm_odrive
+writing list of installed files to '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/install.log'

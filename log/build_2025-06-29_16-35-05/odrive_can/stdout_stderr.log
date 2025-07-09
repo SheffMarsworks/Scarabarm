@@ -1,0 +1,23 @@
+[  1%] Built target odrive_can__cpp
+[ 11%] Built target odrive_can__rosidl_generator_c
+[ 11%] Built target ament_cmake_python_symlink_odrive_can
+[ 21%] Built target odrive_can__rosidl_typesupport_c
+[ 36%] Built target odrive_can__rosidl_typesupport_cpp
+[ 50%] Built target odrive_can__rosidl_typesupport_fastrtps_cpp
+[ 51%] Built target odrive_can__rosidl_typesupport_introspection_cpp
+[ 61%] Built target odrive_can__rosidl_typesupport_fastrtps_c
+[ 71%] Built target odrive_can__rosidl_typesupport_introspection_c
+[ 71%] Built target odrive_can
+[ 80%] Built target odrive_can_node
+[ 81%] Built target odrive_can__py
+[ 90%] Built target odrive_can__rosidl_generator_py
+[ 93%] Built target odrive_can__rosidl_typesupport_c__pyext
+[ 96%] Built target odrive_can__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target odrive_can__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing odrive_can.egg-info/PKG-INFO
+writing dependency_links to odrive_can.egg-info/dependency_links.txt
+writing top-level names to odrive_can.egg-info/top_level.txt
+reading manifest file 'odrive_can.egg-info/SOURCES.txt'
+writing manifest file 'odrive_can.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_odrive_can_egg

@@ -1,0 +1,1 @@
+/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can/rosidl_typesupport_introspection_c/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_introspection_c.h

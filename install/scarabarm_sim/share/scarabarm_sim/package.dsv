@@ -1,0 +1,8 @@
+source;share/scarabarm_sim/hook/cmake_prefix_path.ps1
+source;share/scarabarm_sim/hook/cmake_prefix_path.dsv
+source;share/scarabarm_sim/hook/cmake_prefix_path.sh
+source;share/scarabarm_sim/local_setup.bash
+source;share/scarabarm_sim/local_setup.dsv
+source;share/scarabarm_sim/local_setup.ps1
+source;share/scarabarm_sim/local_setup.sh
+source;share/scarabarm_sim/local_setup.zsh

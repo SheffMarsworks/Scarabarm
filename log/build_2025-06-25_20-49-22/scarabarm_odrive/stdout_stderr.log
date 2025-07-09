@@ -1,0 +1,25 @@
+running develop
+running egg_info
+creating scarabarm_odrive.egg-info
+writing scarabarm_odrive.egg-info/PKG-INFO
+writing dependency_links to scarabarm_odrive.egg-info/dependency_links.txt
+writing entry points to scarabarm_odrive.egg-info/entry_points.txt
+writing requirements to scarabarm_odrive.egg-info/requires.txt
+writing top-level names to scarabarm_odrive.egg-info/top_level.txt
+writing manifest file 'scarabarm_odrive.egg-info/SOURCES.txt'
+reading manifest file 'scarabarm_odrive.egg-info/SOURCES.txt'
+writing manifest file 'scarabarm_odrive.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages/scarabarm-odrive.egg-link (link to .)
+Installing odrive_trajectory_executor script to /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/scarabarm_odrive
+
+Installed /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive
+running symlink_data
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/ament_index
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/ament_index/resource_index
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/ament_index/resource_index/packages
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/resource/scarabarm_odrive -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/ament_index/resource_index/packages
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/package.xml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive
+creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/launch
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/launch/odrive_hardware.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/launch
+symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/launch/multi_odrive_launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/launch

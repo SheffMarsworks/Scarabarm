@@ -1,0 +1,30 @@
+[0.682s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim -- -j8 -l8
+[0.742s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim -- -j8 -l8
+[0.744s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim
+[0.751s] -- Install configuration: ""
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/moveit_sim.launch.py
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/spawn_controllers.launch.py
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/launch/gazebo_sim.launch.py
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/ controllers_sim.yaml
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.urdf.xacro
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.ros2_control.xacro
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/ros2_control_sim.yaml
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/config/full_scrab_arm.srdf
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/ament_index/resource_index/package_run_dependencies/scarabarm_sim
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/ament_index/resource_index/parent_prefix_path/scarabarm_sim
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/ament_prefix_path.sh
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/ament_prefix_path.dsv
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/path.sh
+[0.752s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/environment/path.dsv
+[0.753s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.bash
+[0.753s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.sh
+[0.753s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.zsh
+[0.753s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/local_setup.dsv
+[0.753s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.dsv
+[0.753s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/ament_index/resource_index/packages/scarabarm_sim
+[0.753s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/cmake/scarabarm_simConfig.cmake
+[0.753s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/cmake/scarabarm_simConfig-version.cmake
+[0.753s] -- Up-to-date: /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.xml
+[0.755s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim

@@ -1,0 +1,43 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/odrive_ros2_control_plugin.dir/src/odrive_hardware_interface.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/odrive_ros2_control_plugin.dir/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_base/src/socket_can.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/odrive_ros2_control_plugin.dir/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o[0m
+In file included from [01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/src/odrive_hardware_interface.cpp:3[m[K:
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Estop_msg_t::encode_buf(uint8_t*) const[m[K’:
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:117:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  117 |     void encode_buf([01;35m[Kuint8_t* buf[m[K) const {
+      |                     [01;35m[K~~~~~~~~~^~~[m[K
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Estop_msg_t::decode_buf(const uint8_t*)[m[K’:
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:120:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  120 |     void decode_buf([01;35m[Kconst uint8_t* buf[m[K) {
+      |                     [01;35m[K~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Enter_DFU_Mode_msg_t::encode_buf(uint8_t*) const[m[K’:
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:872:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  872 |     void encode_buf([01;35m[Kuint8_t* buf[m[K) const {
+      |                     [01;35m[K~~~~~~~~~^~~[m[K
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:[m[K In member function ‘[01m[Kvoid Enter_DFU_Mode_msg_t::decode_buf(const uint8_t*)[m[K’:
+[01m[K/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control/../odrive_base/include/can_simple_messages.hpp:875:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  875 |     void decode_buf([01;35m[Kconst uint8_t* buf[m[K) {
+      |                     [01;35m[K~~~~~~~~~~~~~~~^~~[m[K
+[100%] [32m[1mLinking CXX shared library libodrive_ros2_control_plugin.so[0m
+[100%] Built target odrive_ros2_control_plugin
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control//odrive_hardware_interface.xml
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib/libodrive_ros2_control_plugin.so
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/ament_index/resource_index/package_run_dependencies/odrive_ros2_control
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/ament_index/resource_index/parent_prefix_path/odrive_ros2_control
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.bash
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.sh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.zsh
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/ament_index/resource_index/packages/odrive_ros2_control
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/odrive_ros2_control
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig-version.cmake
+-- Symlinking: /home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.xml

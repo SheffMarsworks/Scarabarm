@@ -1,0 +1,16 @@
+[1.580s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build --no-deps symlink_data
+[1.826s] running develop
+[2.002s] running egg_info
+[2.003s] writing Arm_description.egg-info/PKG-INFO
+[2.003s] writing dependency_links to Arm_description.egg-info/dependency_links.txt
+[2.003s] writing entry points to Arm_description.egg-info/entry_points.txt
+[2.004s] writing requirements to Arm_description.egg-info/requires.txt
+[2.004s] writing top-level names to Arm_description.egg-info/top_level.txt
+[2.007s] reading manifest file 'Arm_description.egg-info/SOURCES.txt'
+[2.009s] writing manifest file 'Arm_description.egg-info/SOURCES.txt'
+[2.011s] running build_ext
+[2.012s] Creating /home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages/Arm-description.egg-link (link to .)
+[2.013s] 
+[2.013s] Installed /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description
+[2.014s] running symlink_data
+[2.108s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description' returned '0': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build --no-deps symlink_data

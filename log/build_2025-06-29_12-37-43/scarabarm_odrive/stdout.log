@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing scarabarm_odrive.egg-info/PKG-INFO
+writing dependency_links to scarabarm_odrive.egg-info/dependency_links.txt
+writing entry points to scarabarm_odrive.egg-info/entry_points.txt
+writing requirements to scarabarm_odrive.egg-info/requires.txt
+writing top-level names to scarabarm_odrive.egg-info/top_level.txt
+reading manifest file 'scarabarm_odrive.egg-info/SOURCES.txt'
+writing manifest file 'scarabarm_odrive.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages/scarabarm-odrive.egg-link (link to .)
+Installing odrive_trajectory_executor script to /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/scarabarm_odrive
+
+Installed /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive
+running symlink_data

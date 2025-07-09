@@ -1,0 +1,1 @@
+/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_ros2_control/ament_cmake_environment_hooks/local_setup.sh

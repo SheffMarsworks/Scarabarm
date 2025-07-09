@@ -1,0 +1,822 @@
+[0.151s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.151s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77e8a1c532b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77e8a1d94160>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77e8a1d94160>>, mixin_verb=('build',))
+[0.274s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.275s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/student/scarab_ros2/src/scarabarm_ros2'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extensions ['ignore', 'ignore_ament_install']
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extension 'ignore'
+[0.285s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extension 'ros'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extensions ['cmake', 'python']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extension 'cmake'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extension 'python'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extensions ['python_setup_py']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive) by extension 'python_setup_py'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extension 'ros'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extensions ['cmake', 'python']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extension 'cmake'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extension 'python'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extensions ['python_setup_py']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base) by extension 'python_setup_py'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extension 'ros'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extensions ['cmake', 'python']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extension 'cmake'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extension 'python'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extensions ['python_setup_py']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/include) by extension 'python_setup_py'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extension 'ros'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extensions ['cmake', 'python']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extension 'cmake'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extension 'python'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extensions ['python_setup_py']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_base/src) by extension 'python_setup_py'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_botwheel_explorer) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_botwheel_explorer) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_botwheel_explorer) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_botwheel_explorer) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_botwheel_explorer) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_botwheel_explorer) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_botwheel_explorer) by extension 'colcon_meta'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_botwheel_explorer) by extensions ['ros']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_botwheel_explorer) by extension 'ros'
+[0.290s] DEBUG:colcon.colcon_core.package_identification:Package 'ros_odrive/odrive_botwheel_explorer' with type 'ros.ament_cmake' and name 'odrive_botwheel_explorer'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_node) by extensions ['ignore', 'ignore_ament_install']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_node) by extension 'ignore'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_node) by extension 'ignore_ament_install'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_node) by extensions ['colcon_pkg']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_node) by extension 'colcon_pkg'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_node) by extensions ['colcon_meta']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_node) by extension 'colcon_meta'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_node) by extensions ['ros']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_node) by extension 'ros'
+[0.291s] DEBUG:colcon.colcon_core.package_identification:Package 'ros_odrive/odrive_node' with type 'ros.ament_cmake' and name 'odrive_can'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_ros2_control) by extension 'ignore'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_ros2_control) by extension 'ignore_ament_install'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_ros2_control) by extensions ['colcon_pkg']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_ros2_control) by extension 'colcon_pkg'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_ros2_control) by extensions ['colcon_meta']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_ros2_control) by extension 'colcon_meta'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_ros2_control) by extensions ['ros']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(ros_odrive/odrive_ros2_control) by extension 'ros'
+[0.292s] DEBUG:colcon.colcon_core.package_identification:Package 'ros_odrive/odrive_ros2_control' with type 'ros.ament_cmake' and name 'odrive_ros2_control'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_control) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_control) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_control) by extension 'ignore_ament_install'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_control) by extensions ['colcon_pkg']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_control) by extension 'colcon_pkg'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_control) by extensions ['colcon_meta']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_control) by extension 'colcon_meta'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_control) by extensions ['ros']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_control) by extension 'ros'
+[0.293s] DEBUG:colcon.colcon_core.package_identification:Package 'scarabarm_control' with type 'ros.ament_python' and name 'scarabarm_control'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extensions ['colcon_meta']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extension 'colcon_meta'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extension 'ros'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extensions ['cmake', 'python']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extension 'cmake'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extension 'python'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extensions ['python_setup_py']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description) by extension 'python_setup_py'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extensions ['colcon_meta']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extension 'colcon_meta'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extensions ['ros']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extension 'ros'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extensions ['cmake', 'python']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extension 'cmake'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extension 'python'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extensions ['python_setup_py']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm) by extension 'python_setup_py'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm/Arm_description) by extensions ['ignore', 'ignore_ament_install']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm/Arm_description) by extension 'ignore'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm/Arm_description) by extension 'ignore_ament_install'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm/Arm_description) by extensions ['colcon_pkg']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm/Arm_description) by extension 'colcon_pkg'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm/Arm_description) by extensions ['colcon_meta']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm/Arm_description) by extension 'colcon_meta'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm/Arm_description) by extensions ['ros']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/arm/Arm_description) by extension 'ros'
+[0.296s] DEBUG:colcon.colcon_core.package_identification:Package 'scarabarm_description/arm/Arm_description' with type 'ros.ament_python' and name 'Arm_description'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extension 'ignore_ament_install'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extensions ['colcon_pkg']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extension 'colcon_pkg'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extensions ['colcon_meta']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extension 'colcon_meta'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extensions ['ros']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extension 'ros'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extensions ['cmake', 'python']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extension 'cmake'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extension 'python'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extensions ['python_setup_py']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee) by extension 'python_setup_py'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee/gripper_sim_description) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee/gripper_sim_description) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee/gripper_sim_description) by extension 'ignore_ament_install'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee/gripper_sim_description) by extensions ['colcon_pkg']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee/gripper_sim_description) by extension 'colcon_pkg'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee/gripper_sim_description) by extensions ['colcon_meta']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee/gripper_sim_description) by extension 'colcon_meta'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee/gripper_sim_description) by extensions ['ros']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/ee/gripper_sim_description) by extension 'ros'
+[0.297s] DEBUG:colcon.colcon_core.package_identification:Package 'scarabarm_description/ee/gripper_sim_description' with type 'ros.ament_python' and name 'gripper_sim_description'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/full_scrab_arm) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/full_scrab_arm) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/full_scrab_arm) by extension 'ignore_ament_install'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/full_scrab_arm) by extensions ['colcon_pkg']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/full_scrab_arm) by extension 'colcon_pkg'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/full_scrab_arm) by extensions ['colcon_meta']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/full_scrab_arm) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/full_scrab_arm) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/full_scrab_arm) by extension 'ros'
+[0.298s] DEBUG:colcon.colcon_core.package_identification:Package 'scarabarm_description/full_scrab_arm' with type 'ros.ament_cmake' and name 'full_scrab_arm'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extension 'ros'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extensions ['cmake', 'python']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extension 'cmake'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extension 'python'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extensions ['python_setup_py']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include) by extension 'python_setup_py'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extension 'ros'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extensions ['cmake', 'python']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extension 'cmake'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extension 'python'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extensions ['python_setup_py']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/include/scarabarm_description) by extension 'python_setup_py'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extension 'ros'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extensions ['cmake', 'python']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extension 'cmake'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extension 'python'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extensions ['python_setup_py']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/src) by extension 'python_setup_py'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extension 'ros'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extensions ['cmake', 'python']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extension 'cmake'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extension 'python'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extensions ['python_setup_py']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_description/worlds) by extension 'python_setup_py'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_moveit) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_moveit) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_moveit) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_moveit) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_moveit) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_moveit) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_moveit) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_moveit) by extension 'ros'
+[0.302s] DEBUG:colcon.colcon_core.package_identification:Package 'scarabarm_moveit' with type 'ros.ament_cmake' and name 'scarabarm_moveit'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_odrive) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_odrive) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_odrive) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_odrive) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_odrive) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_odrive) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_odrive) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_odrive) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_odrive) by extension 'ros'
+[0.303s] DEBUG:colcon.colcon_core.package_identification:Package 'scarabarm_odrive' with type 'ros.ament_python' and name 'scarabarm_odrive'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_sim) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_sim) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_sim) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_sim) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_sim) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_sim) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_sim) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(scarabarm_sim) by extension 'ros'
+[0.315s] DEBUG:colcon.colcon_core.package_identification:Package 'scarabarm_sim' with type 'ros.ament_cmake' and name 'scarabarm_sim'
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'Arm_description' build argument 'cmake_args' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'Arm_description' build argument 'cmake_target' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'Arm_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'Arm_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'Arm_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'Arm_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'Arm_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'Arm_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'Arm_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.332s] DEBUG:colcon.colcon_core.verb:Building package 'Arm_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description', 'merge_install': False, 'path': '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/arm/Arm_description', 'symlink_install': False, 'test_result_base': None}
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'gripper_sim_description' build argument 'cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'gripper_sim_description' build argument 'cmake_target' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'gripper_sim_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'gripper_sim_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'gripper_sim_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'gripper_sim_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'gripper_sim_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'gripper_sim_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'gripper_sim_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.333s] DEBUG:colcon.colcon_core.verb:Building package 'gripper_sim_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description', 'merge_install': False, 'path': '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/ee/gripper_sim_description', 'symlink_install': False, 'test_result_base': None}
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'cmake_target' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'cmake_clean_cache' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'cmake_clean_first' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'cmake_force_configure' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'ament_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'catkin_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.333s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_can' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can', 'merge_install': False, 'path': '/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_node', 'symlink_install': False, 'test_result_base': None}
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_target' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.334s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_ros2_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_ros2_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control', 'merge_install': False, 'path': '/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control', 'symlink_install': False, 'test_result_base': None}
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_control' build argument 'cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_control' build argument 'cmake_target' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.334s] DEBUG:colcon.colcon_core.verb:Building package 'scarabarm_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control', 'merge_install': False, 'path': '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_control', 'symlink_install': False, 'test_result_base': None}
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_sim' build argument 'cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_sim' build argument 'cmake_target' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.334s] DEBUG:colcon.colcon_core.verb:Building package 'scarabarm_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim', 'merge_install': False, 'path': '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_sim', 'symlink_install': False, 'test_result_base': None}
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'full_scrab_arm' build argument 'cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'full_scrab_arm' build argument 'cmake_target' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'full_scrab_arm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'full_scrab_arm' build argument 'cmake_clean_cache' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'full_scrab_arm' build argument 'cmake_clean_first' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'full_scrab_arm' build argument 'cmake_force_configure' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'full_scrab_arm' build argument 'ament_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'full_scrab_arm' build argument 'catkin_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'full_scrab_arm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.335s] DEBUG:colcon.colcon_core.verb:Building package 'full_scrab_arm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm', 'merge_install': False, 'path': '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/full_scrab_arm', 'symlink_install': False, 'test_result_base': None}
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'odrive_botwheel_explorer' build argument 'cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'odrive_botwheel_explorer' build argument 'cmake_target' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'odrive_botwheel_explorer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'odrive_botwheel_explorer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'odrive_botwheel_explorer' build argument 'cmake_clean_first' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'odrive_botwheel_explorer' build argument 'cmake_force_configure' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'odrive_botwheel_explorer' build argument 'ament_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'odrive_botwheel_explorer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'odrive_botwheel_explorer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.335s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_botwheel_explorer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_botwheel_explorer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer', 'merge_install': False, 'path': '/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_botwheel_explorer', 'symlink_install': False, 'test_result_base': None}
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_odrive' build argument 'cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_odrive' build argument 'cmake_target' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_odrive' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_odrive' build argument 'cmake_clean_cache' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_odrive' build argument 'cmake_clean_first' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_odrive' build argument 'cmake_force_configure' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_odrive' build argument 'ament_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_odrive' build argument 'catkin_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_odrive' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.336s] DEBUG:colcon.colcon_core.verb:Building package 'scarabarm_odrive' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive', 'merge_install': False, 'path': '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_odrive', 'symlink_install': False, 'test_result_base': None}
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_moveit' build argument 'cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_moveit' build argument 'cmake_target' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'scarabarm_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.336s] DEBUG:colcon.colcon_core.verb:Building package 'scarabarm_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit', 'merge_install': False, 'path': '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_moveit', 'symlink_install': False, 'test_result_base': None}
+[0.336s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.338s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.338s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/arm/Arm_description' with build type 'ament_python'
+[0.339s] Level 1:colcon.colcon_core.shell:create_environment_hook('Arm_description', 'ament_prefix_path')
+[0.341s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/hook/ament_prefix_path.ps1'
+[0.342s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/hook/ament_prefix_path.dsv'
+[0.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/hook/ament_prefix_path.sh'
+[0.343s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.343s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.343s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.344s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.347s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/ee/gripper_sim_description' with build type 'ament_python'
+[0.348s] Level 1:colcon.colcon_core.shell:create_environment_hook('gripper_sim_description', 'ament_prefix_path')
+[0.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/hook/ament_prefix_path.ps1'
+[0.349s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/hook/ament_prefix_path.dsv'
+[0.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/hook/ament_prefix_path.sh'
+[0.350s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.350s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.355s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_node' with build type 'ament_cmake'
+[0.356s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_node'
+[0.356s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.356s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.360s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control' with build type 'ament_cmake'
+[0.360s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_ros2_control'
+[0.361s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.361s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.365s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_control' with build type 'ament_python'
+[0.365s] Level 1:colcon.colcon_core.shell:create_environment_hook('scarabarm_control', 'ament_prefix_path')
+[0.366s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/hook/ament_prefix_path.ps1'
+[0.367s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/hook/ament_prefix_path.dsv'
+[0.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/hook/ament_prefix_path.sh'
+[0.368s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.368s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.372s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_sim' with build type 'ament_cmake'
+[0.372s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_sim'
+[0.373s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.373s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.578s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/arm/Arm_description'
+[0.579s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.579s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.765s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/ee/gripper_sim_description'
+[0.765s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.766s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can -- -j8 -l8
+[0.776s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_ros2_control -- -j8 -l8
+[1.011s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_control'
+[1.011s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.011s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.021s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_ros2_control -- -j8 -l8
+[1.028s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_ros2_control
+[1.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake /home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_sim -DCMAKE_INSTALL_PREFIX=/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim
+[1.050s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_ros2_control)
+[1.051s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_ros2_control
+[1.052s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control' for CMake module files
+[1.053s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control' for CMake config files
+[1.053s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_ros2_control', 'cmake_prefix_path')
+[1.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.ps1'
+[1.054s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.dsv'
+[1.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.sh'
+[1.055s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib'
+[1.055s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_ros2_control', 'ld_library_path_lib')
+[1.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/hook/ld_library_path_lib.ps1'
+[1.056s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/hook/ld_library_path_lib.dsv'
+[1.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/hook/ld_library_path_lib.sh'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/bin'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib/pkgconfig/odrive_ros2_control.pc'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib/python3.10/site-packages'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/bin'
+[1.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.ps1'
+[1.060s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv'
+[1.061s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.sh'
+[1.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.bash'
+[1.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.zsh'
+[1.064s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/colcon-core/packages/odrive_ros2_control)
+[1.065s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_ros2_control)
+[1.065s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control' for CMake module files
+[1.066s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control' for CMake config files
+[1.066s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_ros2_control', 'cmake_prefix_path')
+[1.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.ps1'
+[1.067s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.dsv'
+[1.068s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.sh'
+[1.068s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib'
+[1.068s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_ros2_control', 'ld_library_path_lib')
+[1.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/hook/ld_library_path_lib.ps1'
+[1.069s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/hook/ld_library_path_lib.dsv'
+[1.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/hook/ld_library_path_lib.sh'
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/bin'
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib/pkgconfig/odrive_ros2_control.pc'
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib/python3.10/site-packages'
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/bin'
+[1.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.ps1'
+[1.071s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv'
+[1.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.sh'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.bash'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/odrive_ros2_control/package.zsh'
+[1.074s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/share/colcon-core/packages/odrive_ros2_control)
+[1.074s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_botwheel_explorer' with build type 'ament_cmake'
+[1.075s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/scarab_ros2/src/scarabarm_ros2/ros_odrive/odrive_botwheel_explorer'
+[1.075s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.075s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.094s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can -- -j8 -l8
+[1.095s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can
+[1.222s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_can)
+[1.223s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can' for CMake module files
+[1.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_can
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can' for CMake config files
+[1.226s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_can', 'cmake_prefix_path')
+[1.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/hook/cmake_prefix_path.ps1'
+[1.227s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/hook/cmake_prefix_path.dsv'
+[1.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/hook/cmake_prefix_path.sh'
+[1.230s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib'
+[1.230s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_can', 'ld_library_path_lib')
+[1.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/hook/ld_library_path_lib.ps1'
+[1.231s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/hook/ld_library_path_lib.dsv'
+[1.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/hook/ld_library_path_lib.sh'
+[1.232s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/bin'
+[1.232s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/pkgconfig/odrive_can.pc'
+[1.233s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/python3.10/site-packages'
+[1.233s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/bin'
+[1.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/package.ps1'
+[1.234s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/package.dsv'
+[1.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/package.sh'
+[1.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/package.bash'
+[1.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/package.zsh'
+[1.236s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/colcon-core/packages/odrive_can)
+[1.237s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_can)
+[1.237s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can' for CMake module files
+[1.238s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can' for CMake config files
+[1.239s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_can', 'cmake_prefix_path')
+[1.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/hook/cmake_prefix_path.ps1'
+[1.240s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/hook/cmake_prefix_path.dsv'
+[1.241s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/hook/cmake_prefix_path.sh'
+[1.242s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib'
+[1.242s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_can', 'ld_library_path_lib')
+[1.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/hook/ld_library_path_lib.ps1'
+[1.243s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/hook/ld_library_path_lib.dsv'
+[1.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/hook/ld_library_path_lib.sh'
+[1.244s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/bin'
+[1.244s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/pkgconfig/odrive_can.pc'
+[1.244s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib/python3.10/site-packages'
+[1.244s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/bin'
+[1.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/package.ps1'
+[1.246s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/package.dsv'
+[1.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/package.sh'
+[1.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/package.bash'
+[1.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/odrive_can/package.zsh'
+[1.249s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/share/colcon-core/packages/odrive_can)
+[1.251s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_odrive' with build type 'ament_python'
+[1.251s] Level 1:colcon.colcon_core.shell:create_environment_hook('scarabarm_odrive', 'ament_prefix_path')
+[1.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/hook/ament_prefix_path.ps1'
+[1.252s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/hook/ament_prefix_path.dsv'
+[1.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/hook/ament_prefix_path.sh'
+[1.254s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.254s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.264s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_botwheel_explorer': CMAKE_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble LD_LIBRARY_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/lib:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_botwheel_explorer -- -j8 -l8
+[1.312s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_botwheel_explorer' returned '0': CMAKE_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble LD_LIBRARY_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/lib:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_botwheel_explorer -- -j8 -l8
+[1.313s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_botwheel_explorer': CMAKE_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble LD_LIBRARY_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/lib:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_botwheel_explorer
+[1.343s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_botwheel_explorer)
+[1.343s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer' for CMake module files
+[1.344s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_botwheel_explorer' returned '0': CMAKE_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble LD_LIBRARY_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/lib:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/odrive_botwheel_explorer
+[1.345s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer' for CMake config files
+[1.345s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_botwheel_explorer', 'cmake_prefix_path')
+[1.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/hook/cmake_prefix_path.ps1'
+[1.346s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/hook/cmake_prefix_path.dsv'
+[1.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/hook/cmake_prefix_path.sh'
+[1.347s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/bin'
+[1.347s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/lib/pkgconfig/odrive_botwheel_explorer.pc'
+[1.347s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/lib/python3.10/site-packages'
+[1.348s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/bin'
+[1.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.ps1'
+[1.349s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.dsv'
+[1.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.sh'
+[1.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.bash'
+[1.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.zsh'
+[1.350s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/colcon-core/packages/odrive_botwheel_explorer)
+[1.351s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_botwheel_explorer)
+[1.352s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer' for CMake module files
+[1.352s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer' for CMake config files
+[1.353s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_botwheel_explorer', 'cmake_prefix_path')
+[1.353s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/hook/cmake_prefix_path.ps1'
+[1.354s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/hook/cmake_prefix_path.dsv'
+[1.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/hook/cmake_prefix_path.sh'
+[1.355s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/bin'
+[1.355s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/lib/pkgconfig/odrive_botwheel_explorer.pc'
+[1.356s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/lib/python3.10/site-packages'
+[1.356s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/bin'
+[1.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.ps1'
+[1.358s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.dsv'
+[1.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.sh'
+[1.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.bash'
+[1.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.zsh'
+[1.362s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer/share/colcon-core/packages/odrive_botwheel_explorer)
+[1.696s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_odrive'
+[1.696s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.696s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/ee/gripper_sim_description': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/gripper_sim_description build --build-base /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/build install --record /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/install.log --single-version-externally-managed install_data
+[1.709s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/build
+[1.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/arm/Arm_description': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/Arm_description build --build-base /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build install --record /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/install.log --single-version-externally-managed install_data
+[2.026s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description' for CMake module files
+[2.027s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/ee/gripper_sim_description' returned '0': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/gripper_sim_description build --build-base /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/build install --record /home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description/install.log --single-version-externally-managed install_data
+[2.027s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description' for CMake config files
+[2.028s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib'
+[2.028s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/bin'
+[2.028s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/pkgconfig/gripper_sim_description.pc'
+[2.029s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages'
+[2.029s] Level 1:colcon.colcon_core.shell:create_environment_hook('gripper_sim_description', 'pythonpath')
+[2.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/hook/pythonpath.ps1'
+[2.030s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/hook/pythonpath.dsv'
+[2.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/hook/pythonpath.sh'
+[2.031s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/bin'
+[2.031s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gripper_sim_description)
+[2.031s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/package.ps1'
+[2.033s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/package.dsv'
+[2.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/package.sh'
+[2.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/package.bash'
+[2.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/gripper_sim_description/package.zsh'
+[2.035s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/share/colcon-core/packages/gripper_sim_description)
+[2.052s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description' for CMake module files
+[2.053s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/arm/Arm_description' returned '0': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/Arm_description build --build-base /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/build install --record /home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description/install.log --single-version-externally-managed install_data
+[2.054s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description' for CMake config files
+[2.054s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib'
+[2.054s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/bin'
+[2.055s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/pkgconfig/Arm_description.pc'
+[2.055s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages'
+[2.055s] Level 1:colcon.colcon_core.shell:create_environment_hook('Arm_description', 'pythonpath')
+[2.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/hook/pythonpath.ps1'
+[2.057s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/hook/pythonpath.dsv'
+[2.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/hook/pythonpath.sh'
+[2.058s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/bin'
+[2.058s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Arm_description)
+[2.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/package.ps1'
+[2.059s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/package.dsv'
+[2.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/package.sh'
+[2.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/package.bash'
+[2.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/Arm_description/package.zsh'
+[2.061s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/share/colcon-core/packages/Arm_description)
+[2.062s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/full_scrab_arm' with build type 'ament_cmake'
+[2.062s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_description/full_scrab_arm'
+[2.063s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.063s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.184s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control' returned '0': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/build
+[2.186s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_control': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/scarabarm_control build --build-base /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/build install --record /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/install.log --install-scripts $base/lib/scarabarm_control --single-version-externally-managed install_data --force
+[2.190s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_odrive': CMAKE_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm LD_LIBRARY_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/lib:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/scarabarm_odrive build --build-base /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/build install --record /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/install.log --single-version-externally-managed install_data
+[2.239s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/src:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm -- -j8 -l8
+[2.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm' returned '0': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/src:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm -- -j8 -l8
+[2.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/src:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm
+[2.292s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(full_scrab_arm)
+[2.292s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm' for CMake module files
+[2.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm' returned '0': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/src:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/full_scrab_arm
+[2.293s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm' for CMake config files
+[2.293s] Level 1:colcon.colcon_core.shell:create_environment_hook('full_scrab_arm', 'cmake_prefix_path')
+[2.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/hook/cmake_prefix_path.ps1'
+[2.294s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/hook/cmake_prefix_path.dsv'
+[2.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/hook/cmake_prefix_path.sh'
+[2.295s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/bin'
+[2.295s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/lib/pkgconfig/full_scrab_arm.pc'
+[2.295s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/lib/python3.10/site-packages'
+[2.295s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/bin'
+[2.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.ps1'
+[2.296s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.dsv'
+[2.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.sh'
+[2.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.bash'
+[2.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.zsh'
+[2.298s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/colcon-core/packages/full_scrab_arm)
+[2.298s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(full_scrab_arm)
+[2.298s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm' for CMake module files
+[2.299s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm' for CMake config files
+[2.299s] Level 1:colcon.colcon_core.shell:create_environment_hook('full_scrab_arm', 'cmake_prefix_path')
+[2.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/hook/cmake_prefix_path.ps1'
+[2.299s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/hook/cmake_prefix_path.dsv'
+[2.300s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/hook/cmake_prefix_path.sh'
+[2.300s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/bin'
+[2.300s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/lib/pkgconfig/full_scrab_arm.pc'
+[2.301s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/lib/python3.10/site-packages'
+[2.301s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/bin'
+[2.301s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.ps1'
+[2.301s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.dsv'
+[2.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.sh'
+[2.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.bash'
+[2.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/full_scrab_arm/package.zsh'
+[2.303s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm/share/colcon-core/packages/full_scrab_arm)
+[2.303s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_moveit' with build type 'ament_cmake'
+[2.303s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_moveit'
+[2.304s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.304s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.469s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control' for CMake module files
+[2.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_control' returned '0': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/scarabarm_control build --build-base /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/build install --record /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/install.log --install-scripts $base/lib/scarabarm_control --single-version-externally-managed install_data --force
+[2.471s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control' for CMake config files
+[2.471s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib'
+[2.472s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/bin'
+[2.472s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/pkgconfig/scarabarm_control.pc'
+[2.472s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages'
+[2.472s] Level 1:colcon.colcon_core.shell:create_environment_hook('scarabarm_control', 'pythonpath')
+[2.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/hook/pythonpath.ps1'
+[2.473s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/hook/pythonpath.dsv'
+[2.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/hook/pythonpath.sh'
+[2.474s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/bin'
+[2.474s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scarabarm_control)
+[2.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/package.ps1'
+[2.475s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/package.dsv'
+[2.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/package.sh'
+[2.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/package.bash'
+[2.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/package.zsh'
+[2.476s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/colcon-core/packages/scarabarm_control)
+[2.483s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive' for CMake module files
+[2.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_odrive' returned '0': CMAKE_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm LD_LIBRARY_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/lib:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/lib:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/scarabarm_odrive build --build-base /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/build install --record /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive/install.log --single-version-externally-managed install_data
+[2.484s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive' for CMake config files
+[2.485s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib'
+[2.485s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/bin'
+[2.485s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/pkgconfig/scarabarm_odrive.pc'
+[2.485s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages'
+[2.485s] Level 1:colcon.colcon_core.shell:create_environment_hook('scarabarm_odrive', 'pythonpath')
+[2.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/hook/pythonpath.ps1'
+[2.486s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/hook/pythonpath.dsv'
+[2.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/hook/pythonpath.sh'
+[2.487s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/bin'
+[2.487s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scarabarm_odrive)
+[2.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/package.ps1'
+[2.488s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/package.dsv'
+[2.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/package.sh'
+[2.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/package.bash'
+[2.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/scarabarm_odrive/package.zsh'
+[2.489s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/share/colcon-core/packages/scarabarm_odrive)
+[2.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_moveit': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/opt/ros/humble CMAKE_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/src:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_moveit -- -j8 -l8
+[2.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_moveit' returned '0': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/opt/ros/humble CMAKE_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/src:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_moveit -- -j8 -l8
+[2.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_moveit': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/opt/ros/humble CMAKE_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/src:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_moveit
+[2.625s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scarabarm_moveit)
+[2.626s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit' for CMake module files
+[2.627s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_moveit' returned '0': AMENT_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/opt/ros/humble CMAKE_PREFIX_PATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/full_scrab_arm:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_botwheel_explorer:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_ros2_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/src:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:/home/student/scarab_ros2/src/scarabarm_ros2/install/odrive_can/local/lib/python3.10/dist-packages:/home/student/scarab_ros2/src/scarabarm_ros2/build/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/build/Arm_description:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_moveit
+[2.627s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit' for CMake config files
+[2.627s] Level 1:colcon.colcon_core.shell:create_environment_hook('scarabarm_moveit', 'cmake_prefix_path')
+[2.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/hook/cmake_prefix_path.ps1'
+[2.628s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/hook/cmake_prefix_path.dsv'
+[2.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/hook/cmake_prefix_path.sh'
+[2.629s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/lib'
+[2.629s] Level 1:colcon.colcon_core.shell:create_environment_hook('scarabarm_moveit', 'ld_library_path_lib')
+[2.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/hook/ld_library_path_lib.ps1'
+[2.630s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/hook/ld_library_path_lib.dsv'
+[2.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/hook/ld_library_path_lib.sh'
+[2.631s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/bin'
+[2.631s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/lib/pkgconfig/scarabarm_moveit.pc'
+[2.632s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/lib/python3.10/site-packages'
+[2.632s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/bin'
+[2.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/package.ps1'
+[2.633s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/package.dsv'
+[2.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/package.sh'
+[2.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/package.bash'
+[2.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/package.zsh'
+[2.634s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/colcon-core/packages/scarabarm_moveit)
+[2.635s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scarabarm_moveit)
+[2.635s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit' for CMake module files
+[2.635s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit' for CMake config files
+[2.636s] Level 1:colcon.colcon_core.shell:create_environment_hook('scarabarm_moveit', 'cmake_prefix_path')
+[2.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/hook/cmake_prefix_path.ps1'
+[2.636s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/hook/cmake_prefix_path.dsv'
+[2.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/hook/cmake_prefix_path.sh'
+[2.637s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/lib'
+[2.638s] Level 1:colcon.colcon_core.shell:create_environment_hook('scarabarm_moveit', 'ld_library_path_lib')
+[2.638s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/hook/ld_library_path_lib.ps1'
+[2.638s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/hook/ld_library_path_lib.dsv'
+[2.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/hook/ld_library_path_lib.sh'
+[2.639s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/bin'
+[2.639s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/lib/pkgconfig/scarabarm_moveit.pc'
+[2.640s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/lib/python3.10/site-packages'
+[2.640s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/bin'
+[2.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/package.ps1'
+[2.641s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/package.dsv'
+[2.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/package.sh'
+[2.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/package.bash'
+[2.643s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/scarabarm_moveit/package.zsh'
+[2.644s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_moveit/share/colcon-core/packages/scarabarm_moveit)
+[13.361s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake /home/student/scarab_ros2/src/scarabarm_ros2/scarabarm_sim -DCMAKE_INSTALL_PREFIX=/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim
+[13.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim -- -j8 -l8
+[13.391s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --build /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim -- -j8 -l8
+[13.393s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim
+[13.408s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scarabarm_sim)
+[13.408s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim' for CMake module files
+[13.409s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_odrive:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control:/home/student/scarab_ros2/src/scarabarm_ros2/install/gripper_sim_description:/home/student/scarab_ros2/src/scarabarm_ros2/install/Arm_description:/opt/ros/humble /usr/bin/cmake --install /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_sim
+[13.409s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim' for CMake config files
+[13.409s] Level 1:colcon.colcon_core.shell:create_environment_hook('scarabarm_sim', 'cmake_prefix_path')
+[13.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/hook/cmake_prefix_path.ps1'
+[13.410s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/hook/cmake_prefix_path.dsv'
+[13.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/hook/cmake_prefix_path.sh'
+[13.411s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/bin'
+[13.411s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/lib/pkgconfig/scarabarm_sim.pc'
+[13.411s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/lib/python3.10/site-packages'
+[13.411s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/bin'
+[13.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.ps1'
+[13.412s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.dsv'
+[13.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.sh'
+[13.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.bash'
+[13.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.zsh'
+[13.413s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/colcon-core/packages/scarabarm_sim)
+[13.413s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scarabarm_sim)
+[13.414s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim' for CMake module files
+[13.414s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim' for CMake config files
+[13.414s] Level 1:colcon.colcon_core.shell:create_environment_hook('scarabarm_sim', 'cmake_prefix_path')
+[13.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/hook/cmake_prefix_path.ps1'
+[13.415s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/hook/cmake_prefix_path.dsv'
+[13.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/hook/cmake_prefix_path.sh'
+[13.415s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/bin'
+[13.415s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/lib/pkgconfig/scarabarm_sim.pc'
+[13.415s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/lib/python3.10/site-packages'
+[13.416s] Level 1:colcon.colcon_core.environment:checking '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/bin'
+[13.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.ps1'
+[13.416s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.dsv'
+[13.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.sh'
+[13.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.bash'
+[13.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/scarabarm_sim/package.zsh'
+[13.418s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_sim/share/colcon-core/packages/scarabarm_sim)
+[13.418s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[13.419s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[13.419s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[13.420s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.455s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[13.455s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.456s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.456s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[13.484s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[13.485s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[13.485s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/scarab_ros2/src/scarabarm_ros2/install/local_setup.ps1'
+[13.486s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/scarab_ros2/src/scarabarm_ros2/install/_local_setup_util_ps1.py'
+[13.487s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/scarab_ros2/src/scarabarm_ros2/install/setup.ps1'
+[13.488s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/scarab_ros2/src/scarabarm_ros2/install/local_setup.sh'
+[13.489s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/scarab_ros2/src/scarabarm_ros2/install/_local_setup_util_sh.py'
+[13.489s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/scarab_ros2/src/scarabarm_ros2/install/setup.sh'
+[13.490s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/scarab_ros2/src/scarabarm_ros2/install/local_setup.bash'
+[13.490s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/scarab_ros2/src/scarabarm_ros2/install/setup.bash'
+[13.491s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/scarab_ros2/src/scarabarm_ros2/install/local_setup.zsh'
+[13.492s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/scarab_ros2/src/scarabarm_ros2/install/setup.zsh'

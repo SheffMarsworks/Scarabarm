@@ -1,0 +1,32 @@
+[1.344s] Invoking command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/build --no-deps symlink_data
+[1.634s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.634s]   warnings.warn(
+[1.684s] running develop
+[1.849s] running egg_info
+[1.853s] creating src/scarabarm_control.egg-info
+[1.854s] writing src/scarabarm_control.egg-info/PKG-INFO
+[1.854s] writing dependency_links to src/scarabarm_control.egg-info/dependency_links.txt
+[1.854s] writing entry points to src/scarabarm_control.egg-info/entry_points.txt
+[1.854s] writing requirements to src/scarabarm_control.egg-info/requires.txt
+[1.854s] writing top-level names to src/scarabarm_control.egg-info/top_level.txt
+[1.855s] writing manifest file 'src/scarabarm_control.egg-info/SOURCES.txt'
+[1.855s] reading manifest file 'src/scarabarm_control.egg-info/SOURCES.txt'
+[1.855s] writing manifest file 'src/scarabarm_control.egg-info/SOURCES.txt'
+[1.856s] running build_ext
+[1.856s] Creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages/scarabarm-control.egg-link (link to src)
+[1.857s] Installing scarab_controller script to /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/scarabarm_control
+[1.858s] Installing scarab_js_agg script to /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/scarabarm_control
+[1.858s] 
+[1.858s] Installed /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/src
+[1.858s] running symlink_data
+[1.858s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/ament_index
+[1.859s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/ament_index/resource_index
+[1.859s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/ament_index/resource_index/packages
+[1.859s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/resource/scarabarm_control -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/ament_index/resource_index/packages
+[1.860s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/package.xml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control
+[1.860s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/launch
+[1.861s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/launch/bringup_pi.launch.py -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/launch
+[1.861s] creating /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/config
+[1.862s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/config/ros2_control_odrive.yaml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/config
+[1.862s] symbolically linking /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/config/controllers.yaml -> /home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/share/scarabarm_control/config
+[1.929s] Invoked command in '/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control' returned '0': PYTHONPATH=/home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/scarab_ros2/src/scarabarm_ros2/install/scarabarm_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/scarab_ros2/src/scarabarm_ros2/build/scarabarm_control/build --no-deps symlink_data
