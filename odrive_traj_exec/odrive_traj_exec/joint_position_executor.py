@@ -18,9 +18,9 @@ class JointPositionExecutor(Node):
             None,
             ('odrive0', 0, 64.0),   # Joint 2
             ('odrive1', 0, 64.0),   # Joint 3
-            ('odrive2', 0, 64.0),   # Joint 4
-            ('odrive3', 0, 10.0),   # Joint 5
-            ('odrive4', 0, 10.0),   # Joint 6
+            # ('odrive2', 0, 64.0),   # Joint 4
+            ('odrive2', 0, 10.0),   # Joint 5
+            ('odrive3', 0, 10.0),   # Joint 6
         ]
 
         # Create publishers

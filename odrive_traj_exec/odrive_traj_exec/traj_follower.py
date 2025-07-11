@@ -17,9 +17,9 @@ class TrajFollower(Node):
             None,
             ('odrive0', 0, 64.0),
             ('odrive1', 0, 64.0),
-            ('odrive2', 0, 64.0),
+            # ('odrive2', 0, 64.0),
+            ('odrive2', 0, 10.0),
             ('odrive3', 0, 10.0),
-            ('odrive4', 0, 10.0),
         ]
 
         self.pubs = {}

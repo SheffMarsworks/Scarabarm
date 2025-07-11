@@ -4,6 +4,8 @@
 <xacro:include filename="/urdf/materials.xacro" />
 <xacro:include filename="/urdf/Arm.ros2control" />
 <xacro:include filename="/urdf/Arm.gazebo" />
+
+
 <link name="base_link">
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -124,7 +126,7 @@
     </geometry>
   </collision>
 </link>
-
+<!--
 <link name="joint_4">
   <inertial>
     <origin xyz="0.0336640600883303 2.443871592397065e-06 0.07394571759876645" rpy="0 0 0"/>
@@ -145,22 +147,23 @@
     </geometry>
   </collision>
 </link>
+-->
 
 <link name="joint_5">
   <inertial>
-    <origin xyz="-0.058784357231620475 2.0314674387122977e-08 -0.02392347991923094" rpy="0 0 0"/>
-    <mass value="7.117801366510355"/>
-    <inertia ixx="0.012602" iyy="0.014343" izz="0.008719" ixy="-0.0" iyz="-0.0" ixz="-0.001058"/>
+    <origin xyz="0.023923642393848504 -2.0314690871714446e-08 0.058784176535901955" rpy="0 0 0"/>
+    <mass value="7.117801366510354"/>
+    <inertia ixx="0.008719" iyy="0.014343" izz="0.012602" ixy="-0.0" iyz="-0.0" ixz="-0.001058"/>
   </inertial>
   <visual>
-    <origin xyz="0.0371 0.0 -0.9385" rpy="0 0 0"/>
+    <origin xyz="-0.0 -0.0 -0.8555" rpy="0 0 0"/>
     <geometry>
       <mesh filename="/meshes/joint_5_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="part"/>
   </visual>
   <collision>
-    <origin xyz="0.0371 0.0 -0.9385" rpy="0 0 0"/>
+    <origin xyz="-0.0 -0.0 -0.8555" rpy="0 0 0"/>
     <geometry>
       <mesh filename="/meshes/joint_5_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -169,19 +172,19 @@
 
 <link name="joint_6">
   <inertial>
-    <origin xyz="-3.2284747548960713e-07 0.02392364239352567 0.058784174788324095" rpy="0 0 0"/>
-    <mass value="7.117801366510355"/>
-    <inertia ixx="0.014343" iyy="0.008719" izz="0.012602" ixy="0.0" iyz="-0.001058" ixz="0.0"/>
+    <origin xyz="-0.05878401231370166 -0.023923642393565595 1.4215174881648807e-07" rpy="0 0 0"/>
+    <mass value="7.117801366510353"/>
+    <inertia ixx="0.012602" iyy="0.008719" izz="0.014343" ixy="-0.001058" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.1021 0.0 -0.9793" rpy="0 0 0"/>
+    <origin xyz="0.0408 0.0 -0.9205" rpy="0 0 0"/>
     <geometry>
       <mesh filename="/meshes/joint_6_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="part"/>
   </visual>
   <collision>
-    <origin xyz="0.1021 0.0 -0.9793" rpy="0 0 0"/>
+    <origin xyz="0.0408 0.0 -0.9205" rpy="0 0 0"/>
     <geometry>
       <mesh filename="/meshes/joint_6_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -241,24 +244,17 @@
   <child link="link_3"/>
 </joint>
 
-<joint name="link_3_to_joint_4" type="fixed">
+<joint name="link_3_to_joint_5" type="fixed">
   <origin xyz="0.0 0.0 0.205" rpy="0 0 0"/>
   <parent link="link_3"/>
-  <child link="joint_4"/>
-</joint>
-
-<joint name="joint_4_to_joint_5" type="continuous">
-  <origin xyz="-0.0371 -0.0 0.083" rpy="0 0 0"/>
-  <parent link="joint_4"/>
   <child link="joint_5"/>
-  <axis xyz="-1.0 -0.0 -0.0"/>
 </joint>
 
 <joint name="joint_5_to_joint_6" type="continuous">
-  <origin xyz="-0.065 0.0 0.0408" rpy="0 0 0"/>
+  <origin xyz="-0.0408 -0.0 0.065" rpy="0 0 0"/>
   <parent link="joint_5"/>
   <child link="joint_6"/>
-  <axis xyz="0.0 -0.0 1.0"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
 </joint>
 
 <joint name="joint_6_to_flange" type="continuous">
