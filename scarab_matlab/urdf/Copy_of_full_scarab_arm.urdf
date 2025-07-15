@@ -17,14 +17,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="part"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -38,14 +38,14 @@
     <visual>
       <origin xyz="0.0371 0.0 -0.1755" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="light_grey"/>
     </visual>
     <collision>
       <origin xyz="0.0371 0.0 -0.1755" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -59,14 +59,14 @@
     <visual>
       <origin xyz="-0.0 0.0 -0.6505" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/link_3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/link_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="light_grey"/>
     </visual>
     <collision>
       <origin xyz="-0.0 0.0 -0.6505" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/link_3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/link_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -80,14 +80,14 @@
     <visual>
       <origin xyz="0.0 0.0 -0.029" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/joint_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/joint_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="part"/>
     </visual>
     <collision>
       <origin xyz="0.0 0.0 -0.029" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/joint_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/joint_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -101,14 +101,14 @@
     <visual>
       <origin xyz="0.0 0.0 -0.0925" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/joint_2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/joint_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="part"/>
     </visual>
     <collision>
       <origin xyz="0.0 0.0 -0.0925" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/joint_2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/joint_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -122,14 +122,14 @@
     <visual>
       <origin xyz="0.0371 0.0 -0.5675" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/joint_3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/joint_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="part"/>
     </visual>
     <collision>
       <origin xyz="0.0371 0.0 -0.5675" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/joint_3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/joint_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -165,14 +165,14 @@
     <visual>
       <origin xyz="-0.0 -0.0 -0.8555" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/joint_5.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/joint_5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="part"/>
     </visual>
     <collision>
       <origin xyz="-0.0 -0.0 -0.8555" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/joint_5.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/joint_5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -186,14 +186,14 @@
     <visual>
       <origin xyz="0.0408 0.0 -0.9205" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/joint_6.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/joint_6.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="part"/>
     </visual>
     <collision>
       <origin xyz="0.0408 0.0 -0.9205" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/donggil/Marsworks/src/Scarabarm/scarab_matlab/meshes/joint_6.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/meshes/joint_6.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -258,17 +258,14 @@
   </joint>
 
   <joint name="joint_5_to_joint_6" type="continuous">
-    <origin xyz="-0.0408 -0.0 0.065" rpy="3.14159 0 0"/>
+    <origin xyz="-0.0408 -0.0 0.065" rpy="0 0 0"/>
     <parent link="joint_5"/>
     <child link="joint_6"/>
     <axis xyz="-1.0 0.0 -0.0"/>
   </joint>
 
   <joint name="joint_6_to_flange" type="continuous">
-  <!--
     <origin xyz="0.0 -0.0408 0.065" rpy="0 0 0"/>
-    -->
-    <origin xyz="-0.065 0.0408 0.0" rpy="-3.14159 0 0"/>
     <parent link="joint_6"/>
     <child link="flange"/>
     <axis xyz="-0.0 -1.0 -0.0"/>

@@ -42,8 +42,8 @@ end
 canPub = true; doPublish = false;
 try
     node      = ros2node("/matlab_gui", 7);
-    sub       = ros2subscriber(node,"/joint_states","sensor_msgs/JointState", ...
-                  @(msg)fprintf("Heard JS: [%s]\n",join(string(msg.position),", ")) );
+    sub = ros2subscriber(node,"/joint_states","sensor_msgs/JointState", ...
+        @(msg)updateLatestJointState(msg));
     pubState  = ros2publisher(node,"/joint_states","sensor_msgs/JointState");
     pubODrive = ros2publisher(node,"/odrive_can/command_joint_positions","std_msgs/Float64MultiArray");
     pubTraj   = ros2publisher(node,"/command_trajectory","trajectory_msgs/JointTrajectory");
@@ -51,6 +51,7 @@ catch
     warning("ROS 2 unavailable – disabling publishers.");
     canPub = false;
 end
+
 
 %% 4. IK + initial goal
 ik      = inverseKinematics("RigidBodyTree",arm);
@@ -158,6 +159,7 @@ qStart = [];
 qGoal = [];
 ppTraj = [];
 playTimer = [];
+latestJointState = [];
 
 btnStart.ButtonPushedFcn = @(~,~)setStartPose();
 btnGoal. ButtonPushedFcn = @(~,~)setGoalPose();
@@ -304,15 +306,20 @@ savedPoses = cell(1,4);  % 4 slots
     end
 
     function resetToActual
-        q = qZero;
+        if isempty(latestJointState)
+            infoT.Text = "No actual robot state received yet!";
+            return;
+        end
+        q = latestJointState;
         for ii=1:nJ
             sliderH(ii).Value = q(ii);
-            editH(ii).Value = q(ii);
+            editH(ii).Value   = q(ii);
         end
-        drawLive(q,false);  % Show reset pose (no publish)
+        drawLive(q,false);  % Show reset pose without publishing
         goalT = getTransform(arm,q,"flange","base_link");
         infoT.Text = "Reset to actual robot position";
     end
+
 
     function savePose(idx)
         savedPoses{idx} = poseVec();
@@ -418,6 +425,19 @@ savedPoses = cell(1,4);  % 4 slots
         btnSend.Enable = "on";
     end
 
+    function updateLatestJointState(msg)
+        qNew = zeros(1, nJ);
+        for k = 1:nJ
+            idx = find(strcmp(msg.name, jNames{k}),1);
+            if ~isempty(idx)
+                qNew(k) = msg.position(idx);
+            end
+        end
+        latestJointState = qNew;
+        fprintf("Heard JS: [%s]\n", join(string(qNew), ", "));
+    end
+
+
 
 
 %% 8. Trajectory helpers
@@ -496,6 +516,8 @@ savedPoses = cell(1,4);  % 4 slots
       show(arm,qGoal,"Parent",axSnap,"Visuals","on","Frames","off");
       initAxes(axSnap); 
       recolorSnapshot();
+
+      latestJointState = qGoal;
 
       send(pubTraj,msg);
       infoT.Text="Trajectory sent to ROS.";
