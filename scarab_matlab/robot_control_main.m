@@ -219,6 +219,9 @@ savedPoses = cell(1,4);  % 4 slots
 
 openLiveControlPanel();
 
+openGripperControlPanel();
+
+
 
 
 %% 7. Nested helper & callback functions
@@ -594,6 +597,46 @@ openLiveControlPanel();
             statusLabel.Text = sprintf("Moved to preset: %s", name);
         end
     end
+
+
+
+
+    function openGripperControlPanel()
+        % New figure for gripper control
+        fGrip = uifigure("Name", "Gripper Control", ...
+            "Position", [1050 650 300 150]);
+    
+        % Slider label
+        uilabel(fGrip, ...
+            "Text", "Gripper Opening (0 = Open, 1 = Closed)", ...
+            "Position", [20 90 260 20]);
+    
+        % Gripper slider
+        gripSlider = uislider(fGrip, ...
+            "Limits", [0 1], ...
+            "Value", 0.5, ...
+            "MajorTicks", [0 0.25 0.5 0.75 1.0], ...
+            "Position", [20 70 260 3]);
+    
+        % Send button
+        uibutton(fGrip, ...
+            "Text", "Send Gripper Command", ...
+            "Position", [80 20 140 30], ...
+            "ButtonPushedFcn", @(~,~)sendGripperCommand(gripSlider.Value));
+    end
+
+    function sendGripperCommand(value)
+        if ~canPub
+            uialert(uf, "ROS 2 unavailable. Cannot send gripper command.", "Error");
+            return;
+        end
+        msg = ros2message("std_msgs/Float32");
+        msg.data = value;  % 0 = open, 1 = closed
+        gripperPub = ros2publisher(node,"/gripper_command","std_msgs/Float32");
+        send(gripperPub, msg);
+    end
+
+
 
 
 
