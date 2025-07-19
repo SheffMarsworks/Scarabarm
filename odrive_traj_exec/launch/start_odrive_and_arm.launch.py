@@ -92,4 +92,15 @@ def generate_launch_description():
         )]
     ))
 
+    # 8) After 3s: Start gripper serial node
+    ld.add_action(TimerAction(
+        period=3.0,
+        actions=[Node(
+            package='odrive_traj_exec',
+            executable='gripper_serial_node',
+            output='screen'
+        )]
+    ))
+
+
     return ld

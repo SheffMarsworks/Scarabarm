@@ -26,6 +26,7 @@ setup(
             'traj_follow   = odrive_traj_exec.traj_follower:main',
             'position_executor = odrive_traj_exec.joint_position_executor:main',
             'joint1_motor_node = odrive_traj_exec.joint1_motor_node:main', 
+            'gripper_serial_node = odrive_traj_exec.gripper_serial_node:main',
         ],
     },
 )
