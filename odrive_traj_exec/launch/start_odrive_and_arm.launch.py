@@ -82,4 +82,14 @@ def generate_launch_description():
         )]
     ))
 
+    # 7) After 2s: Start joint1 node
+    ld.add_action(TimerAction(
+        period=2.0,
+        actions=[Node(
+            package='odrive_traj_exec',
+            executable='joint1_motor_node',
+            output='screen'
+        )]
+    ))
+
     return ld

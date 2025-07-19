@@ -1,4 +1,4 @@
-function dual_robot_gui_traj
+function robot_control_main
 % Dual-Robot GUI with jog, snapshot, start/goal trajectory + ROS 2 optional
 % Tested R2021b + ROS 2 Toolbox R2023a
 
@@ -20,7 +20,7 @@ for k = 1:numel(arm.Bodies)
 end
 nJ = numel(jNames);
 
-%% 2. Hard-code continuous joint limits
+%% 2. Hard-code continuous joint limits and pose 
 limTbl = {
     "joint_1_to_joint_2", [-pi      pi];
     "joint_2_to_link_2",  [-2.5708  2.5708];
@@ -37,6 +37,19 @@ for i = 1:size(limTbl,1)
     jb.PositionLimits = limTbl{i,2};
     replaceJoint(arm,arm.BodyNames{idx},jb);
 end
+
+presetPoses = {
+    "Home",       [0, 0, 0, 0, 0];
+    "Pick",       [0.2, -0.5, 0.3, 0.0, 0.1];
+    "Place",      [-0.2, 0.4, -0.1, 0.0, -0.2];
+    "Ready",      [0.1, 0.1, 0.1, 0.1, 0.1];
+    "Standby",    [0.0, -0.2, 0.2, 0.1, -0.1];
+    "Folded",     [-0.5, 0.3, 0.0, -0.1, 0.2];
+    "Observe",    [0.3, 0.3, -0.3, 0.0, 0.0];
+    "Inspect",    [0.0, 0.0, 0.5, -0.5, 0.0];
+    "Store",      [0.5, -0.5, 0.0, 0.2, -0.2];
+    "Low Profile",[-0.3, -0.3, -0.3, -0.1, 0.1];
+};
 
 %% 3. ROS-2 pubs/subs
 canPub = true; doPublish = false;
@@ -142,6 +155,7 @@ btnApply = uibutton(uf,"Text","Apply ➜ Snapshot",...
          "Position",[364 420 90 32],...
          "ButtonPushedFcn",@(~,~)copyPose);
 
+
 % Trajectory panel (Y=160)
 trajBox = uipanel(uf,"Title","Trajectory","Position",[20 160 440 150]);
 
@@ -202,6 +216,8 @@ end
 
 % Saved positions storage
 savedPoses = cell(1,4);  % 4 slots
+
+openLiveControlPanel();
 
 
 
@@ -454,6 +470,136 @@ savedPoses = cell(1,4);  % 4 slots
         latestJointState = qNew;
         fprintf("Heard JS: [%s]\n", join(string(qNew), ", "));
     end
+
+
+
+
+
+    function openLiveControlPanel()
+        savedSlotCount = 10;
+
+        % Create a new figure window for live jog control via keyboard
+        fKey = uifigure("Name", "Live Jog Panel", ...
+            "Position", [1050 320 400 280]);
+
+    
+        % Instruction label
+        uilabel(fKey, ...
+            "Text", "Use arrow keys and PgUp/PgDn to jog in XYZ", ...
+            "Position", [20 90 260 30], ...
+            "FontWeight", "bold");
+    
+        % Status text
+        statusLabel = uilabel(fKey, ...
+            "Text", "Waiting for input...", ...
+            "Position", [20 50 260 22]);
+    
+        % Register keypress callback
+        fKey.KeyPressFcn = @(src,event)keyJogHandler(event.Key, statusLabel);
+    
+        % Focus the figure to ensure it receives keypress events
+        movegui(fKey);  % optional
+        uialert(fKey, "Click the window once to ensure key input works", "Info");
+
+        % Move to Saved Positions Panel
+        movePanel = uipanel(fKey, ...
+            "Title", "Move to Saved Positions", ...
+            "Position", [20 10 360 200]);  % Increase height from 70 → 100
+
+        % Create buttons for 10 saved slots
+        for i = 1:savedSlotCount
+            col = mod(i-1,5);
+            row = floor((i-1)/5);
+            xpos = 10 + col*70;
+            ypos = 60 - row*40;  % Increased row spacing from 35 → 40
+            uibutton(movePanel, ...
+                "Text", presetPoses{i,1}, ...
+                "Position", [xpos ypos 65 30], ...
+                "FontWeight", "bold", ...
+                "ButtonPushedFcn", @(~,~)moveToSavedPose(i));
+        end
+    end
+
+    function keyJogHandler(key, statusLabel)
+        % Step sizes
+        step_mm = 5;   % linear step
+        step_r  = deg2rad(5);  % angular step
+    
+        % Initialize translation and rotation steps
+        dx = 0; dy = 0; dz = 0;
+        da = 0; db = 0; dg = 0;
+    
+        switch key
+            case 'uparrow',    dy = -step_mm / 1000;  % Y⁻
+            case 'downarrow',  dy =  step_mm / 1000;  % Y⁺
+            case 'leftarrow',  dx =  step_mm / 1000;  % X⁺
+            case 'rightarrow', dx = -step_mm / 1000;  % X⁻
+            case 'pageup',     dz =  step_mm / 1000;  % Z⁺
+            case 'pagedown',   dz = -step_mm / 1000;  % Z⁻
+    
+            % TCP orientation — ABC (roll/pitch/yaw)
+            case 'a', da = -step_r;  % Roll⁻
+            case 'd', da =  step_r;  % Roll⁺
+            case 'w', db = -step_r;  % Pitch⁻
+            case 's', db =  step_r;  % Pitch⁺
+            case 'q', dg = -step_r;  % Yaw⁻
+            case 'e', dg =  step_r;  % Yaw⁺
+    
+            otherwise
+                statusLabel.Text = sprintf("Ignored: %s", key);
+                return;
+        end
+    
+        % Build full transform (linear then rotations)
+        dT = trvec2tform([dx dy dz]) * ...
+             axang2tform([1 0 0 da]) * ...
+             axang2tform([0 1 0 db]) * ...
+             axang2tform([0 0 1 dg]);
+    
+        goalT = dT * goalT;
+    
+        [q, ~] = ik("flange", goalT, weights, poseVec());
+        q = wrapToPi(q);
+    
+        for ii = 1:numel(sliderH)
+            sliderH(ii).Value = max(lowerLim(ii), min(upperLim(ii), q(ii)));
+            editH(ii).Value   = sliderH(ii).Value;
+        end
+    
+        drawLive(q, true);
+        statusLabel.Text = sprintf("Moved: %s (%.1f mm / %.1f°)", ...
+        upper(key), step_mm, rad2deg(step_r));
+
+    end
+
+    function moveToSavedPose(idx)
+        if idx > size(presetPoses, 1)
+            if exist('statusLabel', 'var')
+                statusLabel.Text = sprintf("Invalid pose index: %d", idx);
+            end
+            return;
+        end
+    
+        q = presetPoses{idx, 2};  % Read joint values
+        name = presetPoses{idx, 1};
+    
+        for ii = 1:numel(sliderH)
+            sliderH(ii).Value = q(ii);
+            editH(ii).Value   = q(ii);
+        end
+        drawLive(q, true);
+        goalT = getTransform(arm, q, "flange", "base_link");
+    
+        if exist('statusLabel', 'var')
+            statusLabel.Text = sprintf("Moved to preset: %s", name);
+        end
+    end
+
+
+
+
+
+
 
 
 

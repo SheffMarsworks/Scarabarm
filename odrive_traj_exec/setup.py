@@ -25,6 +25,7 @@ setup(
             'arm_axes = odrive_traj_exec.arm_axes:main',
             'traj_follow   = odrive_traj_exec.traj_follower:main',
             'position_executor = odrive_traj_exec.joint_position_executor:main',
+            'joint1_motor_node = odrive_traj_exec.joint1_motor_node:main', 
         ],
     },
 )
