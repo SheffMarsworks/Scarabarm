@@ -13,10 +13,10 @@ class Joint1Controller(Node):
         # === CONFIGURATION ===
         self.PWM_PIN = 12   # GPIO12 (Pin 32)
         self.DIR_PIN = 23   # GPIO23 (Pin 16)
-        self.A_PIN = 5      # Encoder A - GPIO5 (Pin 29)
-        self.B_PIN = 6      # Encoder B - GPIO6 (Pin 31)
+        self.A_PIN = 17      # Encoder A - GPIO17 (Pin 11)
+        self.B_PIN = 27      # Encoder B - GPIO27 (Pin 13)
 
-        self.GEAR_RATIO = 99.5
+        self.GEAR_RATIO = 99.5 * 8
         self.COUNTS_PER_REV = 12 * 4  # 12 CPR × 4x = 48 counts/rev
         self.TOTAL_COUNTS_PER_JOINT_REV = self.COUNTS_PER_REV * self.GEAR_RATIO
 
